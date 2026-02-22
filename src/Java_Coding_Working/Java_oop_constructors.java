@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
 // Default Constructor
 public class Java_oop_constructors {
 
@@ -125,4 +125,4 @@ class Java_oop_constructors {
 
     }
 
-}
+}*/

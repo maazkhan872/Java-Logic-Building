@@ -1,5 +1,5 @@
-package Java_Coding_Working;
-
+//package Java_Coding_Working;
+/*
 public class Loops {
 
 	public static void main(String args[]) {
@@ -166,3 +166,4 @@ public class Loops {
 
     }
 }
+*/
