@@ -1,5 +1,5 @@
 //package Java_Coding_Working;
-/*
+
 public class Loops {
 
 	public static void main(String args[]) {
@@ -166,4 +166,20 @@ public class Loops {
 
     }
 }
-*/
+
+// Loop Concepts
+// While Loop
+public class Loops{
+	
+	public static void main(String args[]) {
+	
+	int i = 1;
+	int sum = 0;
+	
+	while (i<10) {
+		
+	}
+			
+			
+}
+}
