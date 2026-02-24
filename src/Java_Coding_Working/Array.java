@@ -206,4 +206,142 @@ public class Array {
         }
 
     }
-}*/
+}
+
+
+// Sum of two elements
+public class Array {
+	
+	public static void main(String args[]) {
+		
+		int arr[] = {2, 3 , 5, 4 , 7};
+		
+		int target = 9;
+		
+		for (int i = 0; i < arr.length ;i++) {
+			
+			for (int j = i + 1; j < arr.length; j++) {
+				if (arr[i] + arr[j] == target) {
+					System.out.println("Sum of two elements are: " + arr[i] + " and " + arr[j]);
+				}
+			} 
+		}
+	}
+}
+
+// maximum element
+public class Array {
+	
+	public static void main(String args[]) {
+		
+		int arr[] = {12, 7, 9, 45, 89};
+		int max = arr[0];
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] > max) {
+				max = arr[i];
+			}
+		}
+		System.out.println("Maximun is: " + max);
+	}
+}
+
+// Minimum element
+public class Array {
+	
+	public static void main(String args[]) {
+		
+		int arr[] = {12, 7, 9, 45, 89};
+		int min = arr[0];
+		
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] < min) {
+				min = arr[i];
+			}
+		}
+		System.out.println("Maximun is: " + min);
+	}
+}
+
+// reverse array
+public class Array {
+	public static void main(String args[]) {
+		int arr[] = {1,2,3,4,5};
+		
+		for (int i = arr.length - 1; i>=0; --i) {
+			System.out.println(arr[i]);
+		}
+	}
+}
+
+// Even and Odd Problem
+public class Array {
+	
+	public static void main (String args[]) {
+		int arr[] = {12, 7, 9, 45, 89};
+		
+		for (int i = 0; i < arr.length; i++) {
+		if (arr[i] % 2 == 0) {
+			System.out.print(arr[i] + " Number is even ");
+		}
+		else {
+			System.out.print(arr[i] + " Number is odd ");
+		}
+		}
+	}
+}
+
+// Specific element found
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10,20,30,40};
+
+        int search = 30;
+
+        boolean found = false;
+
+        for(int i = 0; i < arr.length; i++) {
+
+            if(arr[i] == search) {
+
+                found = true;
+
+                break;
+
+            }
+        }
+
+        if(found)
+
+            System.out.println("Element Found");
+
+        else
+
+            System.out.println("Element Not Found");
+
+    }
+} 
+
+// Count even Number
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] arr = {1,2,3,4,6,8};
+
+        int count = 0;
+
+        for(int num : arr) {
+
+            if(num % 2 == 0)
+
+                count++;
+        }
+        
+        System.out.println("Even count is: " + count);
+
+    }
+} 
+
