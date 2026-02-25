@@ -1,6 +1,6 @@
 //package Java_Coding_Working;
 
-public class Loops {
+/*public class Loops {
 
 	public static void main(String args[]) {
 		
@@ -182,4 +182,4 @@ public class Loops{
 			
 			
 }
-}
+}*/
