@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*public class ifelse_logic {
+public class ifelse_logic {
 	
 	int age;
 	double  monthlyincome;
@@ -103,8 +103,7 @@ public class ifelse_logic{
 
 }
 
-
-class firstclass {
+public class ifelse_logic {
 
     int riskScore = 78;
 
@@ -134,44 +133,82 @@ class firstclass {
 
         customer.classifyRisk();
     }
-}
+} 
 
-
-// Switch
-class ifelse_logic {
-
-    String role = "ADMIN";
-
-    public void assignAccess() {
-
-        switch (role) {
-
-            case "ADMIN":
-                System.out.println("Full Access Granted");
-                break;
-
-            case "MANAGER":
-                System.out.println("Limited Admin Access");
-                break;
-
-            case "EMPLOYEE":
-                System.out.println("Standard Access");
-                break;
-
-            case "INTERN":
-                System.out.println("Read-Only Access");
-                break;
-
-            default:
-                System.out.println("No Access");
-        }
-    }
+// Find Largest of 3 Numbers
+public class ifelse_logic {
 
     public static void main(String[] args) {
 
-    	ifelse_logic user = new ifelse_logic();
+        int a = 10;
+        int b = 25;
+        int c = 15;
 
+        if(a > b && a > c) {
 
-        user.assignAccess();
+            System.out.println("A is largest: " + a);
+
+        }
+        else if(b > a && b > c) {
+
+            System.out.println("B is largest: " + b);
+
+        }
+        else {
+
+            System.out.println("C is largest: " + c);
+
+        }
+
     }
-}*/
+}
+
+// Check Number is Even or Odd
+public class ifelse_logic {
+
+	    public static void main(String[] args) {
+
+	        int number = 7;
+
+	        if(number % 2 == 0) {
+
+	            System.out.println("Even Number: " + number);
+
+	        }
+	        else {
+
+	            System.out.println("Odd Numbe:r " + number);
+
+	        }
+
+	    }
+
+	}
+
+// Check Positive, Negative, Zero
+public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int num = -5;
+
+        if(num > 0) {
+
+            System.out.println("Given number is Positive: " + num);
+
+        }
+        else if(num < 0) {
+
+            System.out.println("Given number is Negative: " + num);
+
+        }
+        else {
+
+            System.out.println("Zero");
+
+        }
+    }
+}
+
+
+
