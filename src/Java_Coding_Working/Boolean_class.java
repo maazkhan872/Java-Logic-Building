@@ -1,5 +1,6 @@
 package Java_Coding_Working;
 
+/*
  // Check Prime number
 public class Boolean_class {
 
@@ -58,3 +59,60 @@ public class Boolean_class{
     }
 }
 
+// Check if String contains only Digits
+public class Boolean_class {
+
+    public static boolean isDigits(String str) {
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if (!Character.isDigit(str.charAt(i))) {
+                return false;
+            }
+
+        }
+
+        return true;
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println(isDigits("12345")); // true
+        System.out.println(isDigits("12a45")); // false
+
+    }
+}
+*/
+
+public class Boolean_class {
+
+    // Check if a number is even
+    public static boolean isEven(int num) {
+        return num % 2 == 0;
+    }
+
+    // Check if a character is a vowel
+    public static boolean isVowel(char ch) {
+        ch = Character.toLowerCase(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+
+    // Check if a person is adult (>= 18)
+    public static boolean isAdult(int age) {
+        return age >= 18;
+    }
+
+    public static void main(String[] args) {
+        // Test isEven
+        System.out.println("Is 10 even? " + isEven(10)); // true
+        System.out.println("Is 7 even? " + isEven(7));   // false
+
+        // Test isVowel
+        System.out.println("Is 'A' a vowel? " + isVowel('A')); // true
+        System.out.println("Is 'b' a vowel? " + isVowel('b')); // false
+
+        // Test isAdult
+        System.out.println("Is age 20 adult? " + isAdult(20)); // true
+        System.out.println("Is age 15 adult? " + isAdult(15)); // false
+    }
+}
