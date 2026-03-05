@@ -1,6 +1,52 @@
 package Java_Coding_Working;
 
+
+ * Note: 
+ // if Statement: The if statement executes a block of code only when the condition is true.
+
+// Syntax
+if(condition){
+    // code executes if condition is true
+}
+
 public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        if(age >= 18){
+            System.out.println("You are eligible to vote.");
+        }
+    }
+}
+
+// if-else Statement: Used when there are two possible outcomes.
+
+// Syntax
+if(condition){
+   // true block
+}
+else{
+   // false block
+}
+
+public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int number = 7;
+
+        if(number % 2 == 0){
+            System.out.println("Even number");
+        }
+        else{
+            System.out.println("Odd number");
+        }
+    }
+}
+
+  public class ifelse_logic {
 	
 	int age;
 	double  monthlyincome;
@@ -63,6 +109,22 @@ class ifelse_logic {
     }
 }
 
+// Nested if Statement: An if inside another if. Used when multiple conditions depend on each other.
+ 
+ public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int age = 22;
+        boolean hasLicense = true;
+
+        if(age >= 18){
+            if(hasLicense){
+                System.out.println("You can drive.");
+            }
+        }
+    }
+}
  
 public class ifelse_logic{
 	
@@ -102,6 +164,19 @@ public class ifelse_logic{
     }
 
 }
+
+// else-if Block: Used when multiple conditions exist. Java checks conditions from top to bottom.
+
+// Syntax
+if(condition1){
+}
+else if(condition2){
+}
+else if(condition3){
+}
+else{
+}
+
 
 public class ifelse_logic {
 
@@ -209,6 +284,121 @@ public class ifelse_logic {
         }
     }
 }
+
+// switch Statement: switch is used to select one block from multiple options.Works best when checking specific values.
+
+
+switch(variable){
+
+case value1:
+   code
+   break;
+
+case value2:
+   code
+   break;
+
+default:
+   code
+}
+
+public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int day = 3;
+
+        switch(day){
+
+            case 1:
+                System.out.println("Monday");
+                break;
+
+            case 2:
+                System.out.println("Tuesday");
+                break;
+
+            case 3:
+                System.out.println("Wednesday");
+                break;
+
+            default:
+                System.out.println("Invalid day");
+        }
+    }
+}
+
+import java.util.Scanner;
+
+public class ifelse-logic {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter first number:");
+        double num1 = sc.nextDouble();
+
+        System.out.println("Enter second number:");
+        double num2 = sc.nextDouble();
+
+        System.out.println("Choose Operation:");
+        System.out.println("1 -> Add");
+        System.out.println("2 -> Subtract");
+        System.out.println("3 -> Multiply");
+        System.out.println("4 -> Divide");
+
+        int choice = sc.nextInt();
+
+        switch (choice) {
+
+            case 1:
+                System.out.println("Result = " + (num1 + num2));
+                break;
+
+            case 2:
+                System.out.println("Result = " + (num1 - num2));
+                break;
+
+            case 3:
+                System.out.println("Result = " + (num1 * num2));
+                break;
+
+            case 4:
+                if (num2 != 0) {
+                    System.out.println("Result = " + (num1 / num2));
+                } else {
+                    System.out.println("Cannot divide by zero");
+                }
+                break;
+
+            default:
+                System.out.println("Invalid Choice");
+        }
+
+        sc.close();
+    }
+}
+
+// Ternary Operator: A short form of if-else.
+
+// Syntax
+condition ? value_if_true : value_if_false;
+
+public class ifelse_logic {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+        int max = (a > b) ? a : b;
+
+        System.out.println("Maximum: " + max);
+    }
+}
+
+
 
 
 
