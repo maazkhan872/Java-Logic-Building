@@ -450,80 +450,6 @@ public class firstclass{
 
 }*/
 
-/*
- * else-if ladder
-class firstclass {
-
-    int riskScore = 78;
-
-    public void classifyRisk() {
-
-        if (riskScore >= 90) {
-            System.out.println("Very High Risk");
-
-        } else if (riskScore >= 70) {
-            System.out.println("High Risk");
-
-        } else if (riskScore >= 50) {
-            System.out.println("Medium Risk");
-
-        } else if (riskScore >= 30) {
-            System.out.println("Low Risk");
-
-        } else {
-            System.out.println("Very Low Risk");
-        }
-    }
-
-    public static void main(String[] args) {
-
-        firstclass customer = new firstclass();
-    //    customer.riskScore = 72;
-
-        customer.classifyRisk();
-    }
-}*/
-
-
-/*
- * Switch
-class firstclass {
-
-    String role = "ADMIN";
-
-    public void assignAccess() {
-
-        switch (role) {
-
-            case "ADMIN":
-                System.out.println("Full Access Granted");
-                break;
-
-            case "MANAGER":
-                System.out.println("Limited Admin Access");
-                break;
-
-            case "EMPLOYEE":
-                System.out.println("Standard Access");
-                break;
-
-            case "INTERN":
-                System.out.println("Read-Only Access");
-                break;
-
-            default:
-                System.out.println("No Access");
-        }
-    }
-
-    public static void main(String[] args) {
-
-    	firstclass user = new firstclass();
-
-
-        user.assignAccess();
-    }
-}*/
 
 /*
 public class firstclass {
@@ -546,20 +472,5 @@ public class firstclass {
 }
 */
 
-// Loop Concepts
-// While Loop
-public class firstclass{
-	
-	public static void main(String args[]) {
-	
-	int i = 1;
-	int sum = 0;
-	
-	while (i<10) {
-		
-	}
-			
-			
-}
-}
+
 
