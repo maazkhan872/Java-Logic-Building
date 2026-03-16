@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
 // static Modifier
 public class Non_Access_Modifier {
 
@@ -36,7 +36,7 @@ class Customer extends Non_Access_Modifier{
     void showMinBalance() {
         System.out.println("Changed");
     }
-    */
+    
 
 }
 
@@ -105,4 +105,4 @@ public class AbstractExample {
 
     }
 
-}
+}*/
