@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
 // creating a method
 public class Methods {
 	
@@ -256,4 +256,4 @@ public class Methods {
         c1.display();
         c2.display();
     }
-}
+} */
