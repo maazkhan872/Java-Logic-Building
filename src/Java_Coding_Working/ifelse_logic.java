@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
  * Note: 
  // if Statement: The if statement executes a block of code only when the condition is true.
 
@@ -434,4 +434,4 @@ public class ifelse_logic {
         }
 
     }
-}
+}*/
