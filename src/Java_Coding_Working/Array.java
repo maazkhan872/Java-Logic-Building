@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-public class Array {
+/*public class Array {
 
 	public static void main(String args[]) {
 		
@@ -411,5 +411,5 @@ public class Array {
 
     }
 
-}
+}*/
 
