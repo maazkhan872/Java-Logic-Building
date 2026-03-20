@@ -30,6 +30,7 @@ Note:
     int 1age = 10;   // Cannot start with number
 */
 
+/*
 //Just Print 
 public class Basics_java {
   public static void main(String args[]) {
@@ -183,5 +184,4 @@ public class Basics_java {
         System.out.println(a);
     }
 }
-
-
+*/
