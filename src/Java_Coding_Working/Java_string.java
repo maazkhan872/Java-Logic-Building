@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
 // Concatenation
 public class Java_string {
 	
@@ -113,4 +113,4 @@ public class Java_string {
 
         System.out.println("Vowels: " + count);
     }
-}
+}*/
