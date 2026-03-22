@@ -82,7 +82,6 @@ public class Boolean_class {
 
     }
 }
-*/
 
 public class Boolean_class {
 
@@ -115,4 +114,4 @@ public class Boolean_class {
         System.out.println("Is age 20 adult? " + isAdult(20)); // true
         System.out.println("Is age 15 adult? " + isAdult(15)); // false
     }
-}
+}*/
