@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-public class Math_java {
+/*public class Math_java {
 
 	
 	public static void main(String[] args) {
@@ -84,3 +84,4 @@ public class Math_java {
     }
 
 }
+*/
