@@ -448,10 +448,10 @@ public class firstclass{
         emp.performance_check();
     }
 
-}*/
+}
 
 
-/*
+
 public class firstclass {
 
 	String customerType = "PREMIUM";
@@ -466,11 +466,13 @@ public class firstclass {
     public static void main(String[] args) {
 
         firstclass customer = new firstclass();
+        firstclass customer2 = new firstclass();
 
         customer.calculateDiscount();
+        customer2.calculateDiscount();
     }
 }
-*/
 
+*/
 
 
