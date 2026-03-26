@@ -499,3 +499,23 @@ public class ifelse_logic {
         }
     }
 }
+
+// Electricity Bill
+import java.util.Scanner;
+
+public class ifelse_logic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter units: ");
+        int units = sc.nextInt();
+
+        if (units <= 100) {
+            System.out.println("Bill = " + (units * 5));
+        } else if (units <= 200) {
+            System.out.println("Bill = " + (units * 7));
+        } else {
+            System.out.println("Bill = " + (units * 10));
+        }
+    }
+}
