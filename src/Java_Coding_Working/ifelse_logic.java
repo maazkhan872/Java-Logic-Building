@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*
+
  * Note: 
  // if Statement: The if statement executes a block of code only when the condition is true.
 
@@ -434,4 +434,23 @@ public class ifelse_logic {
         }
 
     }
-}*/
+}
+
+import java.util.Scanner;
+
+public class ifelse_logic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number: ");
+        int num = sc.nextInt();
+
+        if (num > 0) {
+            System.out.println("Positive");
+        } else if (num < 0) {
+            System.out.println("Negative");
+        } else {
+            System.out.println("Zero");
+        }
+    }
+}
