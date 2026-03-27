@@ -542,3 +542,24 @@ public class ifelse_logic {
         }
     }
 }
+
+// Employee Bonus Logic
+import java.util.Scanner;
+
+public class ifelse_logic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter salary: ");
+        int salary = sc.nextInt();
+
+        System.out.print("Enter years of service: ");
+        int years = sc.nextInt();
+
+        if (salary > 100000 && years > 3) {
+            System.out.println("Bonus Granted");
+        } else {
+            System.out.println("No Bonus");
+        }
+    }
+}
