@@ -519,3 +519,26 @@ public class ifelse_logic {
         }
     }
 }
+
+// Order Delivery logic
+import java.util.Scanner;
+
+public class ifelse_logic {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Is payment done? (true/false): ");
+        boolean paid = sc.nextBoolean();
+
+        System.out.print("Is stock available? (true/false): ");
+        boolean stock = sc.nextBoolean();
+
+        if (paid && stock) {
+            System.out.println("Order Dispatched");
+        } else if (!paid) {
+            System.out.println("Payment Pending");
+        } else {
+            System.out.println("Out of Stock");
+        }
+    }
+}
