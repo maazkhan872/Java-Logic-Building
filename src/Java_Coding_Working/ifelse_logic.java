@@ -579,11 +579,17 @@ class ifelse_logic {
     
     public static void main(String[] args) {
 
-    	 ifelse_logic p1 = new  ifelse_logic();
+    	ifelse_logic p1 = new  ifelse_logic();
+    	ifelse_logic p2 = new  ifelse_logic();
 
         p1.productName = "Laptop";
         p1.price = 60000;
 
         p1.checkDiscount();
+        
+        p2.productName = "Bag";
+        p2.price = 10000;
+
+        p2.checkDiscount();
     }
 }
