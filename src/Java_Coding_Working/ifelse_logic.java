@@ -563,3 +563,27 @@ public class ifelse_logic {
         }
     }
 }
+
+// Product Discount Problem
+class ifelse_logic {
+    String productName;
+    int price;
+
+    void checkDiscount() {
+        if (price > 5000) {
+            System.out.println(productName + " discount applied");
+        } else {
+            System.out.println(productName + " no discount");
+        }
+    }
+    
+    public static void main(String[] args) {
+
+    	 ifelse_logic p1 = new  ifelse_logic();
+
+        p1.productName = "Laptop";
+        p1.price = 60000;
+
+        p1.checkDiscount();
+    }
+}
