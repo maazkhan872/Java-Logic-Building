@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*public class Array {
+public class Array {
 
 	public static void main(String args[]) {
 		
@@ -411,5 +411,32 @@ public class Array {
 
     }
 
-}*/
+}
+
+public class Array {
+
+    public static char firstNonRepeatingChar(String str) {
+        int[] freq = new int[256];
+
+        // Step 1: Count frequency
+        for (int i = 0; i < str.length(); i++) {
+            freq[str.charAt(i)]++;
+        }
+
+        // Step 2: Find first non-repeating
+        for (int i = 0; i < str.length(); i++) {
+            if (freq[str.charAt(i)] == 1) {
+                return str.charAt(i);
+            }
+        }
+
+        return '_'; // if none found
+    }
+
+    public static void main(String[] args) {
+        String input = "swiss";
+        char result = firstNonRepeatingChar(input);
+        System.out.println("First non-repeating character: " + result);
+    }
+}
 
