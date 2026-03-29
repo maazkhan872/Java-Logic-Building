@@ -413,6 +413,7 @@ public class Array {
 
 }
 
+// Count Vowels in a String
 public class Array {
 
     public static char firstNonRepeatingChar(String str) {
@@ -437,6 +438,28 @@ public class Array {
         String input = "swiss";
         char result = firstNonRepeatingChar(input);
         System.out.println("First non-repeating character: " + result);
+    }
+}
+
+// Find Maximum Element
+public class Array {
+
+    public static int findMax(int[] arr) {
+        int max = arr[0]; // assume first is max
+
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        return max;
+    }
+
+    public static void main(String[] args) {
+        int[] numbers = {3, 7, 2, 9, 5};
+
+        System.out.println("Maximum element: " + findMax(numbers));
     }
 }
 
