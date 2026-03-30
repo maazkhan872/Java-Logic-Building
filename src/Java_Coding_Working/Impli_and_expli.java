@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*public class Impli_and_expli {
+public class Impli_and_expli {
 
     public static void main(String[] args) {
 
@@ -116,4 +116,21 @@ public class Impli_and_expli {
 
     }
 
-}*/
+}
+
+// substring toUpperCase
+public class Impli_and_expli {
+
+    public static String capitalizeFirst(String str) {
+        if (str == null || str.isEmpty()) {
+            return str;
+        }
+
+        return str.substring(0, 1).toUpperCase() + str.substring(1);
+    }
+
+    public static void main(String[] args) {
+        String input = "java";
+        System.out.println(capitalizeFirst(input));
+    }
+}
