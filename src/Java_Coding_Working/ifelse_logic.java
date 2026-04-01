@@ -608,4 +608,17 @@ public class ifelse_logic {
     }
 }
 
+// Library Fine Check
+public class ifelse_logic {
+    public static void main(String[] args) {
+
+        int lateDays = 10;
+
+        if (lateDays > 7) {
+            System.out.println("Fine Applied");
+        } else {
+            System.out.println("No Fine");
+        }
+    }
+}
 
