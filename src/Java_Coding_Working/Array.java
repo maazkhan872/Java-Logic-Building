@@ -1,5 +1,6 @@
 package Java_Coding_Working;
 
+/*
 public class Array {
 
 	public static void main(String args[]) {
@@ -461,5 +462,5 @@ public class Array {
 
         System.out.println("Maximum element: " + findMax(numbers));
     }
-}
+} */
 
