@@ -592,4 +592,20 @@ class ifelse_logic {
 
         p2.checkDiscount();
     }
+} 
+
+// Mobile Recharge Offer
+public class ifelse_logic {
+    public static void main(String[] args) {
+
+        int rechargeAmount = 1200;
+
+        if (rechargeAmount >= 1000) {
+            System.out.println("Bonus Offer Applied");
+        } else {
+            System.out.println("Normal Recharge");
+        }
+    }
 }
+
+
