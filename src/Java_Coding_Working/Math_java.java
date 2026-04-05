@@ -99,3 +99,12 @@ public class Math_java {
         System.out.println(Math.ceil(5.1));
     }
 }
+
+// Largest of 3 numbers using Math class
+public class Math_java {
+    public static void main(String[] args) {
+        int a = 10, b = 25, c = 18;
+
+        System.out.println(Math.max(a, Math.max(b, c)));
+    }
+}
