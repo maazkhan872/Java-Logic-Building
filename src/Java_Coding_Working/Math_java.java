@@ -108,3 +108,10 @@ public class Math_java {
         System.out.println(Math.max(a, Math.max(b, c)));
     }
 }
+
+
+public class Math_java{
+    public static void main(String[] args) {
+        System.out.println((int)(Math.random() * 10));
+    }
+}
