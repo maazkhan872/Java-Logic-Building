@@ -115,3 +115,10 @@ public class Math_java{
         System.out.println((int)(Math.random() * 10));
     }
 }
+
+
+public class Math_java {
+    public static void main(String[] args) {
+        System.out.println(Math.round(7.6));
+    }
+}
