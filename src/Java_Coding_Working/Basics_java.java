@@ -231,3 +231,19 @@ public class Basics_java {
         System.out.println(count);
     }
 }
+
+// Finally Block Behavior
+public class Basics_java {
+    public static void main(String[] args) {
+
+        try {
+            int a = 10 / 0;
+        } 
+        catch (Exception e) {
+            System.out.println("Exception handled");
+        } 
+        finally {
+            System.out.println("Finally always runs");
+        }
+    }
+}
