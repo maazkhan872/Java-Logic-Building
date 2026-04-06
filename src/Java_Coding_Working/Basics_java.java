@@ -213,3 +213,21 @@ public class Basics_java {
         System.out.println(a);
     }
 }
+
+// Static vs Instance Variable
+public class Basics_java {
+
+    static int count = 0;
+
+    Basics_java() {
+        count++;
+    }
+
+    public static void main(String[] args) {
+        new Basics_java();
+        new Basics_java();
+        new Basics_java();
+
+        System.out.println(count);
+    }
+}
