@@ -30,7 +30,7 @@ Note:
     int 1age = 10;   // Cannot start with number
 */
 
-/*
+
 //Just Print 
 public class Basics_java {
   public static void main(String args[]) {
@@ -184,4 +184,32 @@ public class Basics_java {
         System.out.println(a);
     }
 }
-*/
+
+
+// Java String comparison example: == checks memory reference, .equals() checks actual content
+public class Basics_java {
+    public static void main(String[] args) {
+
+        String a = "Java";
+        String b = "Java";
+        String c = new String("Java");
+
+        System.out.println(a == b);
+        System.out.println(a == c);
+        System.out.println(a.equals(c));
+    }
+}
+
+// Pass by Value in Java
+public class Basics_java {
+
+    public static void change(int x) {
+        x = 50;
+    }
+
+    public static void main(String[] args) {
+        int a = 10;
+        change(a);
+        System.out.println(a);
+    }
+}
