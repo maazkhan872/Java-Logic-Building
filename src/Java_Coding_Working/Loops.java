@@ -199,3 +199,18 @@ public class Loops {
         System.out.println("Reversed: " + reversed);
     }
 }
+
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        int num = 1234;
+        int sum = 0;
+
+        while (num != 0) {
+            sum += num % 10; // last digit add karo
+            num = num / 10;  // last digit remove karo
+        }
+
+        System.out.println("Sum: " + sum);
+    }
+}
