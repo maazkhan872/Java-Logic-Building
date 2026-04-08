@@ -243,3 +243,18 @@ public class Loops {
         System.out.println("Digits: " + count);
     }
 }
+
+// Print Table of a Number
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int num = sc.nextInt();
+
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(num * i);
+        }
+    }
+}
