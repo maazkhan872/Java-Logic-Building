@@ -201,7 +201,7 @@ public class Loops {
 }
 
 
-public class SumOfDigits {
+public class Loops {
     public static void main(String[] args) {
         int num = 1234;
         int sum = 0;
@@ -212,5 +212,19 @@ public class SumOfDigits {
         }
 
         System.out.println("Sum: " + sum);
+    }
+}
+
+// Factorial of a Number
+public class Loops {
+    public static void main(String[] args) {
+        int num = 5;
+        int factorial = 1;
+
+        for (int i = 1; i <= num; i++) {
+            factorial = factorial * i;
+        }
+
+        System.out.println("Factorial: " + factorial);
     }
 }
