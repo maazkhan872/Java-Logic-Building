@@ -153,3 +153,36 @@ public class Classes_concept {
     }
 }
 */
+
+// Rectangle Area Calculator
+class Classes_concept {
+    double length;
+    double width;
+
+    // Constructor
+    Classes_concept(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
+
+    double calculateArea() {
+        return length * width;
+    }
+
+    double calculatePerimeter() {
+        return 2 * (length + width);
+    }
+
+    void display() {
+        System.out.println("Length: " + length);
+        System.out.println("Width: " + width);
+        System.out.println("Area: " + calculateArea());
+        System.out.println("Perimeter: " + calculatePerimeter());
+    }
+
+
+    public static void main(String[] args) {
+    	Classes_concept r1 = new Classes_concept(5, 3);
+        r1.display();
+    }
+    }
