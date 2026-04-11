@@ -37,7 +37,7 @@ Only ONE class can be public
 File name must match public class
 */
 
-/*
+
 public class Classes_concept {
 
 	    String name;
@@ -152,7 +152,7 @@ public class Classes_concept {
         b2.display();
     }
 }
-*/
+
 
 // Rectangle Area Calculator
 class Classes_concept {
@@ -186,3 +186,51 @@ class Classes_concept {
         r1.display();
     }
     }
+
+class Classes_concept {
+    String carName;
+    double pricePerDay;
+    boolean isAvailable;
+
+    // Constructor
+    Classes_concept(String carName, double pricePerDay) {
+        this.carName = carName;
+        this.pricePerDay = pricePerDay;
+        this.isAvailable = true;
+    }
+
+    void rentCar(int days) {
+        if (!isAvailable) {
+            System.out.println("Car is already rented!");
+            return;
+        }
+
+        double totalCost = pricePerDay * days;
+        isAvailable = false;
+
+        System.out.println("Car rented: " + carName);
+        System.out.println("Days: " + days);
+        System.out.println("Total Cost: " + totalCost);
+    }
+
+    void returnCar() {
+        isAvailable = true;
+        System.out.println("Car returned: " + carName);
+    }
+
+    void displayCarInfo() {
+        System.out.println("Car: " + carName);
+        System.out.println("Price per day: " + pricePerDay);
+        System.out.println("Available: " + isAvailable);
+    }
+
+    public static void main(String[] args) {
+    	Classes_concept c1 = new Classes_concept("Civic", 5000);
+
+        c1.displayCarInfo();
+        c1.rentCar(3);
+        c1.rentCar(2); // edge case
+        c1.returnCar();
+        c1.displayCarInfo();
+    }
+}
