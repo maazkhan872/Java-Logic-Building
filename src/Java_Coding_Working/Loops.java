@@ -1,6 +1,6 @@
-//package Java_Coding_Working;
+package Java_Coding_Working;
 
-public class Loops {
+/*public class Loops {
 
 	public static void main(String args[]) {
 		
@@ -255,6 +255,20 @@ public class Loops {
 
         for (int i = 1; i <= 10; i++) {
             System.out.println(num * i);
+        }
+    }
+}*/
+
+
+public class Loops {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = 1; i <= n; i++) {        // rows
+            for (int j = 1; j <= i; j++) {    // stars
+                System.out.print("*");
+            }
+            System.out.println(); // next line
         }
     }
 }
