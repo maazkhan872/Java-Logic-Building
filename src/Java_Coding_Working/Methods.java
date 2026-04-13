@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-
+/*
 // creating a method
 public class Methods {
 	
@@ -274,4 +274,4 @@ public class Methods {
         int result = calculateSum(5);
         System.out.println("Sum: " + result);
     }
-}
+}*/

@@ -37,7 +37,7 @@ Only ONE class can be public
 File name must match public class
 */
 
-
+/*
 public class Classes_concept {
 
 	    String name;
@@ -233,4 +233,4 @@ class Classes_concept {
         c1.returnCar();
         c1.displayCarInfo();
     }
-}
+}*/
