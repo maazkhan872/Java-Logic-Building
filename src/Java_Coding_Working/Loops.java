@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*public class Loops {
+public class Loops {
 
 	public static void main(String args[]) {
 		
@@ -257,9 +257,9 @@ public class Loops {
             System.out.println(num * i);
         }
     }
-}*/
+}
 
-
+// Right Triangle Star Pattern
 public class Loops {
     public static void main(String[] args) {
         int n = 5;
@@ -269,6 +269,20 @@ public class Loops {
                 System.out.print("*");
             }
             System.out.println(); // next line
+        }
+    }
+}
+
+// Inverted Triangle
+public class Loops {
+    public static void main(String[] args) {
+        int n = 5;
+
+        for (int i = n; i >= 1; i--) {        // rows
+            for (int j = 1; j <= i; j++) {    // stars
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
 }
