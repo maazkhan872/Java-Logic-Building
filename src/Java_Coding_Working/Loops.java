@@ -290,12 +290,12 @@ public class Loops {
 // Pyramid Pattern
 public class Loops {
     public static void main(String[] args) {
-        int n = 5;
+        int number = 5;
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= number; i++) {
 
             // spaces
-            for (int j = 1; j <= n - i; j++) {
+            for (int j = 1; j <= number - i; j++) {
                 System.out.print(" ");
             }
 
