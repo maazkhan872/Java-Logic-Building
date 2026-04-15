@@ -13,7 +13,7 @@ We achieve encapsulation using:
 2. public getter/setter methods (controlled access)
 */
 
-
+/*
 public class Encapsulation_oop {
 
     // hidden data (Encapsulation)
@@ -69,7 +69,7 @@ public class Encapsulation_oop {
     }
 } 
 
-
+*/
 class Encapsulation_oop {
 
     //  private data (hidden)
@@ -117,4 +117,26 @@ class Encapsulation_oop {
     public boolean login(String inputPassword) {
         return this.password.equals(inputPassword);
     }
-}
+
+        public static void main(String[] args) {
+
+            Encapsulation_oop user = new Encapsulation_oop("maaz", "maaz@gmail.com", "12345678");
+
+            System.out.println("Username: " + user.getUsername());
+            System.out.println("Email: " + user.getEmail());
+
+            // try invalid updates
+            user.setEmail("wrong-email");
+            user.setPassword("123"); // too short
+
+            // login test
+            if (user.login("12345678")) {
+                System.out.println("Login successful");
+            } else {
+                System.out.println("Login failed");
+            }
+
+            // Not allowed
+            // System.out.println(user.password);
+        }
+    }
