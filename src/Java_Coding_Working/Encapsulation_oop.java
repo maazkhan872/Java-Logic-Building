@@ -67,4 +67,54 @@ public class Encapsulation_oop {
         // NOT allowed (because of encapsulation)
         // account.balance = -9999;
     }
+} 
+
+
+class Encapsulation_oop {
+
+    //  private data (hidden)
+    private String username;
+    private String email;
+    private String password;
+
+    // constructor
+    public Encapsulation_oop(String username, String email, String password) {
+        this.username = username;
+        setEmail(email);        // use setter validation
+        setPassword(password);  // use setter validation
+    }
+
+    // getter (read-only where needed)
+    public String getUsername() {
+        return username;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    // No getter for password (security)
+
+    // controlled setter for email
+    public void setEmail(String email) {
+        if (email != null && email.contains("@")) {
+            this.email = email;
+        } else {
+            System.out.println("Invalid email format!");
+        }
+    }
+
+    // controlled setter for password
+    public void setPassword(String password) {
+        if (password != null && password.length() >= 8) {
+            this.password = password;
+        } else {
+            System.out.println("Password must be at least 8 characters!");
+        }
+    }
+
+    //  method to verify password (real-world pattern)
+    public boolean login(String inputPassword) {
+        return this.password.equals(inputPassword);
+    }
 }
