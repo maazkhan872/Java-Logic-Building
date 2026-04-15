@@ -145,7 +145,10 @@ class Encapsulation_oop {
                 String newEmail = sc.nextLine();
                 user.setEmail(newEmail);
 
-      
+                // 🔹 update password
+                System.out.print("Update Password: ");
+                String newPassword = sc.nextLine();
+                user.setPassword(newPassword);
 
                 // 🔹 login check
                 System.out.print("\nEnter Password to Login: ");
@@ -158,24 +161,5 @@ class Encapsulation_oop {
                 }
 
                 sc.close();
-
-      /*      Encapsulation_oop user = new Encapsulation_oop("maaz", "maaz@gmail.com", "12345678");
-
-            System.out.println("Username: " + user.getUsername());
-            System.out.println("Email: " + user.getEmail());
-
-            // try invalid updates
-            user.setEmail("wrong-email");
-            user.setPassword("123"); // too short
-
-            // login test
-            if (user.login("12345678")) {
-                System.out.println("Login successful");
-            } else {
-                System.out.println("Login failed");
-            }
-
-            // Not allowed
-            // System.out.println(user.password);  */
         }
     }
