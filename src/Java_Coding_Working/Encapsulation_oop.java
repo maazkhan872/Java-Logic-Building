@@ -14,7 +14,6 @@ We achieve encapsulation using:
 2. public getter/setter methods (controlled access)
 */
 
-/*
 public class Encapsulation_oop {
 
     // hidden data (Encapsulation)
@@ -70,7 +69,7 @@ public class Encapsulation_oop {
     }
 } 
 
-*/
+// User Profile Management
 class Encapsulation_oop {
 
     //  private data (hidden)
