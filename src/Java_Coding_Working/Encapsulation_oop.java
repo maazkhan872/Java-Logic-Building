@@ -1,5 +1,6 @@
 package Java_Coding_Working;
 
+import java.util.Scanner;
 /*
 Note:
 First Pillar of OOP: Encapsulation
@@ -113,14 +114,52 @@ class Encapsulation_oop {
         }
     }
 
-    //  method to verify password (real-world pattern)
+    //  method to verify password 
     public boolean login(String inputPassword) {
         return this.password.equals(inputPassword);
     }
+        	
+        	public static void main(String[] args) {
 
-        public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
 
-            Encapsulation_oop user = new Encapsulation_oop("maaz", "maaz@gmail.com", "12345678");
+                // 🔹 taking input from user
+                System.out.print("Enter Username: ");
+                String username = sc.nextLine();
+
+                System.out.print("Enter Email: ");
+                String email = sc.nextLine();
+
+                System.out.print("Enter Password: ");
+                String password = sc.nextLine();
+
+                Encapsulation_oop user = new Encapsulation_oop(username, email, password);
+
+                // 🔹 show data
+                System.out.println("\n--- User Created ---");
+                System.out.println("Username: " + user.getUsername());
+                System.out.println("Email: " + user.getEmail());
+
+                // 🔹 update email
+                System.out.print("\nUpdate Email: ");
+                String newEmail = sc.nextLine();
+                user.setEmail(newEmail);
+
+      
+
+                // 🔹 login check
+                System.out.print("\nEnter Password to Login: ");
+                String loginPass = sc.nextLine();
+
+                if (user.login(loginPass)) {
+                    System.out.println("Login successful");
+                } else {
+                    System.out.println("Login failed");
+                }
+
+                sc.close();
+
+      /*      Encapsulation_oop user = new Encapsulation_oop("maaz", "maaz@gmail.com", "12345678");
 
             System.out.println("Username: " + user.getUsername());
             System.out.println("Email: " + user.getEmail());
@@ -137,6 +176,6 @@ class Encapsulation_oop {
             }
 
             // Not allowed
-            // System.out.println(user.password);
+            // System.out.println(user.password);  */
         }
     }
