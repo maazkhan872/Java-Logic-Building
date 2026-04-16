@@ -14,6 +14,7 @@ We achieve encapsulation using:
 2. public getter/setter methods (controlled access)
 */
 
+// Car Information System
 class Encapsulation_oop{
 
     // private data
@@ -50,6 +51,45 @@ class Encapsulation_oop{
         System.out.println("Year: " + car.getYear());
     }
 }
+
+// Product Price System
+class Encapsulation_oop {
+
+    private String name;
+    private double price;
+
+    public Encapsulation_oop(String name, double price) {
+        this.name = name;
+        setPrice(price);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    // controlled setter
+    public void setPrice(double price) {
+        if (price > 0) {
+            this.price = price;
+        } else {
+            System.out.println("Price must be greater than 0!");
+        }
+    }
+
+        public static void main(String[] args) {
+
+        	Encapsulation_oop p = new Encapsulation_oop("Laptop", 50000);
+
+            System.out.println(p.getName());
+            System.out.println(p.getPrice());
+
+            p.setPrice(-200); 
+        }
+    }
 
 
 public class Encapsulation_oop {
