@@ -14,6 +14,44 @@ We achieve encapsulation using:
 2. public getter/setter methods (controlled access)
 */
 
+class Encapsulation_oop{
+
+    // private data
+    private String brand;
+    private String model;
+    private int year;
+
+    // constructor
+    public Encapsulation_oop(String brand, String model, int year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
+    }
+
+    // getters 
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public static void main(String[] args) {
+
+    	Encapsulation_oop car = new Encapsulation_oop("Toyota", "Corolla", 2020);
+
+        System.out.println("Brand: " + car.getBrand());
+        System.out.println("Model: " + car.getModel());
+        System.out.println("Year: " + car.getYear());
+    }
+}
+
+
 public class Encapsulation_oop {
 
     // hidden data (Encapsulation)
