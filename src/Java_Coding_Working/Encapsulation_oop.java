@@ -49,6 +49,11 @@ class Encapsulation_oop{
         System.out.println("Brand: " + car.getBrand());
         System.out.println("Model: " + car.getModel());
         System.out.println("Year: " + car.getYear());
+        
+        Encapsulation_oop car1 = new Encapsulation_oop("Honda", "Civic", 2019);
+        System.out.println("Brand: " + car1.getBrand());
+        System.out.println("Model: " + car1.getModel());
+        System.out.println("Year: " + car1.getYear());
     }
 }
 
