@@ -12,6 +12,18 @@ We achieve encapsulation using:
 
 1. private variables (data hiding)
 2. public getter/setter methods (controlled access)
+
+"Encapsulation turns objects into self-governing units rather than passive data holders"
+
+Without encapsulation:
+
+Objects are just data containers
+Any part of the code can corrupt state
+
+With encapsulation:
+
+Objects protect themselves
+Invalid operations are blocked internally
 */
 
 // Car Information System
