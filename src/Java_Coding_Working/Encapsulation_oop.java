@@ -101,6 +101,53 @@ class  Encapsulation_oop {
         }
     }
 
+// Student Grade problem
+class Encapsulation_oop {
+
+    private String name;
+    private String grade;
+
+    // constructor
+    public Encapsulation_oop(String name, String grade) {
+        this.name = name;
+        this.grade = grade;
+    }
+
+    // getters
+    public String getName() {
+        return name;
+    }
+
+    public String getGrade() {
+        return grade;
+    }
+
+    // setters
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setGrade(String grade) {
+        this.grade = grade;
+    }
+
+        public static void main(String[] args) {
+
+        	Encapsulation_oop s = new Encapsulation_oop("Maaz", "B");
+
+            // get values
+            System.out.println("Name: " + s.getName());
+            System.out.println("Grade: " + s.getGrade());
+
+            // update values
+            s.setGrade("A");
+
+            System.out.println("\nAfter Update:");
+            System.out.println("Name: " + s.getName());
+            System.out.println("Grade: " + s.getGrade());
+        }
+    }
+
 // Product Price System
 class Encapsulation_oop {
 
