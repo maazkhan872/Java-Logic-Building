@@ -69,6 +69,34 @@ class Encapsulation_oop{
     }
 }
 
+// Book Information
+class  Encapsulation_oop {
+
+    private String title;
+    private String author;
+
+    public  Encapsulation_oop(String title, String author) {
+        this.title = title;
+        this.author = author;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
+        public static void main(String[] args) {
+
+        	 Encapsulation_oop b = new  Encapsulation_oop("Java Basics", "John");
+
+            System.out.println(b.getTitle());
+            System.out.println(b.getAuthor());
+        }
+    }
+
 // Product Price System
 class Encapsulation_oop {
 
