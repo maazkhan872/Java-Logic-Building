@@ -90,10 +90,14 @@ class  Encapsulation_oop {
 
         public static void main(String[] args) {
 
-        	 Encapsulation_oop b = new  Encapsulation_oop("Java Basics", "John");
+        	Encapsulation_oop b = new  Encapsulation_oop("Java Basics", "maaz");
 
             System.out.println(b.getTitle());
             System.out.println(b.getAuthor());
+            
+            Encapsulation_oop b2 = new  Encapsulation_oop("Spring Boot", "Khan");
+            System.out.println(b2.getTitle());
+            System.out.println(b2.getAuthor());
         }
     }
 
