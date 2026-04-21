@@ -177,7 +177,22 @@ class Encapsulation_oop  {
     public void setPrice(double price) {
         this.price = price;
     }
-}
+    
+        public static void main(String[] args) {
+
+        	Encapsulation_oop  m = new Encapsulation_oop ("Samsung", 50000);
+
+            System.out.println("Brand: " + m.getBrand());
+            System.out.println("Price: " + m.getPrice());
+
+            // update
+            m.setPrice(60000);
+
+            System.out.println("\nAfter Update:");
+            System.out.println("Brand: " + m.getBrand());
+            System.out.println("Price: " + m.getPrice());
+        }
+    }
 
 // Product Price System
 class Encapsulation_oop {
