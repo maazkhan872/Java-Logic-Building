@@ -148,6 +148,37 @@ class Encapsulation_oop {
         }
     }
 
+
+class Encapsulation_oop  {
+
+    private String brand;
+    private double price;
+
+    // constructor
+    public Mobile(String brand, double price) {
+        this.brand = brand;
+        this.price = price;
+    }
+
+    // getters
+    public String getBrand() {
+        return brand;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    // setters
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+}
+
 // Product Price System
 class Encapsulation_oop {
 
