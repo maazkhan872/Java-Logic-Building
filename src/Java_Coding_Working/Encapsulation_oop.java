@@ -110,11 +110,13 @@ class Encapsulation_oop {
 
     private String name;
     private String grade;
+    private int age;
 
     // constructor
-    public Encapsulation_oop(String name, String grade) {
+    public Encapsulation_oop(String name, String grade, int age) {
         this.name = name;
         this.grade = grade;
+        this.age = age;
     }
 
     // getters
@@ -125,6 +127,10 @@ class Encapsulation_oop {
     public String getGrade() {
         return grade;
     }
+    
+    public int getAge() {
+        return age;
+    }
 
     // setters
     public void setName(String name) {
@@ -134,6 +140,10 @@ class Encapsulation_oop {
     public void setGrade(String grade) {
         this.grade = grade;
     }
+    
+    public void setAge(String age) {
+        this.age = age;
+    }
 
         public static void main(String[] args) {
 
@@ -142,6 +152,7 @@ class Encapsulation_oop {
             // get values
             System.out.println("Name: " + s.getName());
             System.out.println("Grade: " + s.getGrade());
+            System.out.println("Age: " + s.getAge());
 
             // update values
             s.setGrade("A");
@@ -149,6 +160,7 @@ class Encapsulation_oop {
             System.out.println("\nAfter Update:");
             System.out.println("Name: " + s.getName());
             System.out.println("Grade: " + s.getGrade());
+            System.out.println("Age: " + s.getAge());
         }
     }
 
