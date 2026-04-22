@@ -98,6 +98,10 @@ class  Encapsulation_oop {
             Encapsulation_oop b2 = new  Encapsulation_oop("Spring Boot", "Khan");
             System.out.println(b2.getTitle());
             System.out.println(b2.getAuthor());
+            
+            Encapsulation_oop b3 = new  Encapsulation_oop("Python Fundamentals", "Fatima");
+            System.out.println(b3.getTitle());
+            System.out.println(b3.getAuthor());
         }
     }
 
