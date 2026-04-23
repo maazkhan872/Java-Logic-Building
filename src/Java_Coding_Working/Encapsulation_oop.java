@@ -164,8 +164,7 @@ class Encapsulation_oop {
         }
     }
 
-
-
+// Laptop Information Problem
 class Encapsulation_oop {
 
     private String brand;
@@ -194,7 +193,23 @@ class Encapsulation_oop {
     public void setRam(int ram) {
         this.ram = ram;
     }
-}
+    
+        public static void main(String[] args) {
+
+        	Encapsulation_oop  l = new Encapsulation_oop ("HP", 8);
+
+            // get values
+            System.out.println("Brand: " + l.getBrand());
+            System.out.println("RAM: " + l.getRam() + "GB");
+
+            // update values
+            l.setRam(16);
+
+            System.out.println("\nAfter Upgrade:");
+            System.out.println("Brand: " + l.getBrand());
+            System.out.println("RAM: " + l.getRam() + "GB");
+        }
+    }
 
 
 class Encapsulation_oop  {
