@@ -1,0 +1,26 @@
+📌 Overview
+
+This repository is a complete Java learning journey from beginner to advanced level. It includes step-by-step tutorials, practical examples, coding exercises to strengthen core programming concepts.
+
+The goal is to build strong fundamentals in Java and prepare for:
+
+Interviews
+Internship tasks
+Academic exams
+Real-world development
+
+🎯 Features of This Repository
+Step-by-step structured learning
+Beginner-friendly code
+Real-world examples
+Clean and readable programs
+Interview-focused concepts
+Practice questions with solutions
+
+solutions
+🧠 Who This Is For?
+Beginners starting Java
+Students learning OOP
+Internship preparation
+Interview preparation
+Developers revising Java fundamentals

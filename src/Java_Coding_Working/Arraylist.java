@@ -1,8 +1,8 @@
 package Java_Coding_Working;
 
+//Store and Print List of Names
 import java.util.ArrayList;
 
-// Store and Print List of Names
 public class Arraylist {
     public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class Arraylist {
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class EvenNumbers {
+public class Arraylist {
     public static void main(String[] args) {
 
         ArrayList<Integer> numbers = new ArrayList<>(
