@@ -2,6 +2,7 @@ package Java_Coding_Working;
 
 import java.util.ArrayList;
 
+// Store and Print List of Names
 public class Arraylist {
     public static void main(String[] args) {
 
@@ -17,6 +18,27 @@ public class Arraylist {
         // Printing elements
         for (String name : students) {
             System.out.println(name);
+        }
+    }
+}
+
+// Find Even Numbers
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class EvenNumbers {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>(
+                Arrays.asList(10, 15, 20, 25, 30, 33)
+        );
+
+        System.out.println("Even Numbers:");
+
+        for (int num : numbers) {
+            if (num % 2 == 0) {
+                System.out.println(num);
+            }
         }
     }
 }
