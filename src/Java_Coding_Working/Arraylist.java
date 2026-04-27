@@ -42,3 +42,39 @@ public class Arraylist {
         }
     }
 }
+
+
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        // ArrayList create karna
+        ArrayList<String> names = new ArrayList<>();
+
+        // Data add karna
+        names.add("Ali");
+        names.add("Ahmed");
+        names.add("Sara");
+
+        // Print karna
+        System.out.println(names);
+
+        // Specific element access
+        System.out.println("First element: " + names.get(0));
+
+        // Update element
+        names.set(1, "Usman");
+
+        // Remove element
+        names.remove("Sara");
+
+        // Loop through ArrayList
+        for (String name : names) {
+            System.out.println(name);
+        }
+
+        // Size check
+        System.out.println("Size: " + names.size());
+    }
+}
