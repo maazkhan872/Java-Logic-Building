@@ -77,3 +77,34 @@ public class Arraylist {
         System.out.println("Size: " + names.size());
     }
 }
+
+
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        // ArrayList create
+        ArrayList<String> names = new ArrayList<>();
+
+        // Add elements
+        names.add("Ali");
+        names.add("Ahmed");
+        names.add("Sara");
+
+        // Print list
+        System.out.println("List: " + names);
+
+        // Get element
+        System.out.println("First: " + names.get(0));
+
+        // Update element
+        names.set(1, "Usman");
+
+        // Remove element
+        names.remove("Sara");
+
+        // Final list
+        System.out.println("Updated List: " + names);
+    }
+}
