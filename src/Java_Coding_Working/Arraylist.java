@@ -1,6 +1,5 @@
 package Java_Coding_Working;
 
-//Store and Print List of Names
 import java.util.ArrayList;
 
 public class Arraylist {
@@ -49,19 +48,20 @@ import java.util.ArrayList;
 public class Arraylist {
     public static void main(String[] args) {
 
-        // ArrayList create karna
+        // ArrayList create
         ArrayList<String> names = new ArrayList<>();
 
         // Data add karna
         names.add("Ali");
         names.add("Ahmed");
         names.add("Sara");
+        names.add("Maaz");
 
-        // Print karna
         System.out.println(names);
 
         // Specific element access
         System.out.println("First element: " + names.get(0));
+        System.out.println("First element: " + names.get(1));
 
         // Update element
         names.set(1, "Usman");
@@ -74,7 +74,6 @@ public class Arraylist {
             System.out.println(name);
         }
 
-        // Size check
         System.out.println("Size: " + names.size());
     }
 }
