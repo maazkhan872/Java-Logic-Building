@@ -137,3 +137,39 @@ public class Arraylist {
         System.out.println("Duplicate elements: " + duplicates);
     }
 }
+
+// Find Second Largest Number
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(15);
+        numbers.add(42);
+        numbers.add(8);
+        numbers.add(23);
+        numbers.add(42);
+
+        // Remove duplicates
+        ArrayList<Integer> uniqueList = new ArrayList<>();
+
+        for (int num : numbers) {
+            if (!uniqueList.contains(num)) {
+                uniqueList.add(num);
+            }
+        }
+
+        // Sort list
+        Collections.sort(uniqueList);
+
+        if (uniqueList.size() >= 2) {
+            int secondLargest = uniqueList.get(uniqueList.size() - 2);
+            System.out.println("Second Largest: " + secondLargest);
+        } else {
+            System.out.println("Not enough elements");
+        }
+    }
+}
