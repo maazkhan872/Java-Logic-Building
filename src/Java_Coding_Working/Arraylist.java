@@ -152,6 +152,8 @@ public class Arraylist {
         numbers.add(8);
         numbers.add(23);
         numbers.add(42);
+        numbers.add(48);
+        numbers.add(87);
 
         // Remove duplicates
         ArrayList<Integer> uniqueList = new ArrayList<>();
