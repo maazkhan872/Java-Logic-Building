@@ -153,7 +153,7 @@ public class Arraylist {
         numbers.add(23);
         numbers.add(42);
         numbers.add(48);
-        numbers.add(87);
+        numbers.add(87c);
 
         // Remove duplicates
         ArrayList<Integer> uniqueList = new ArrayList<>();
@@ -172,6 +172,46 @@ public class Arraylist {
             System.out.println("Second Largest: " + secondLargest);
         } else {
             System.out.println("Not enough elements");
+        }
+    }
+}
+
+package Java_Coding_Working;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+
+public class Arraylist{
+    public static void main(String[] args) {
+
+        // Create ArrayList
+        ArrayList<String> students = new ArrayList<>();
+
+        students.add("Ali");
+        students.add("Ahmed");
+        students.add("Sara");
+        students.add("Ali");     // duplicate
+        students.add("Hina");
+        students.add("Ayesha");
+
+        System.out.println("Original List: " + students);
+
+        // Remove duplicates using HashSet
+        HashSet<String> set = new HashSet<>(students);
+        students = new ArrayList<>(set);
+
+        // Sort the list
+        Collections.sort(students);
+
+        System.out.println("Sorted Unique List: " + students);
+
+        // Print names starting with 'A'
+        System.out.println("Names starting with A:");
+        for (String name : students) {
+            if (name.startsWith("A")) {
+                System.out.println(name);
+            }
         }
     }
 }
