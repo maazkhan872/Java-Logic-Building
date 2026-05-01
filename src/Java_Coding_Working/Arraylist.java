@@ -194,6 +194,8 @@ public class Arraylist{
         students.add("Ali");     // duplicate
         students.add("Hina");
         students.add("Ayesha");
+        students.add("Maaz");
+        students.add("Fatima");
 
         System.out.println("Original List: " + students);
 
