@@ -196,8 +196,9 @@ public class Arraylist{
         students.add("Ayesha");
         students.add("Maaz");
         students.add("Fatima");
+        students.add("Ashar");
 
-        System.out.println("Original List: " + students);
+        System.out.println("Original List of Students is: " + students);
 
         // Remove duplicates using HashSet
         HashSet<String> set = new HashSet<>(students);
