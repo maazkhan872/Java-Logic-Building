@@ -198,16 +198,16 @@ public class Arraylist{
         students.add("Fatima");
         students.add("Ashar");
 
-        System.out.println("Original List of Students is: " + students);
+        System.out.println("Original List of Students is: " + students_name);
 
         // Remove duplicates using HashSet
-        HashSet<String> set = new HashSet<>(students);
+        HashSet<String> set = new HashSet<>(students_name);
         students = new ArrayList<>(set);
 
         // Sort the list
-        Collections.sort(students);
+        Collections.sort(students_name);
 
-        System.out.println("Sorted Unique List: " + students);
+        System.out.println("Sorted Unique List: " + students_name);
 
         // Print names starting with 'A'
         System.out.println("Names starting with A:");
