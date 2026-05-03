@@ -197,6 +197,7 @@ public class Arraylist{
         students.add("Maaz");
         students.add("Fatima");
         students.add("Ashar");
+        students.add("Adil");
 
         System.out.println("Original List of Students is: " + students_name);
 
