@@ -233,6 +233,8 @@ public class Arraylist {
         list.add(15);
         list.add(25);
         list.add(10);
+        list.add(5);
+        list.add(28);
 
         int max = list.get(0);
 
@@ -242,6 +244,6 @@ public class Arraylist {
             }
         }
 
-        System.out.println("Max value: " + max);
+        System.out.println("Max value is: " + max);
     }
 }
