@@ -255,12 +255,12 @@ public class Arraylist {
     public static int findFirstNonRepeating(ArrayList<Integer> list) {
         HashMap<Integer, Integer> freq = new HashMap<>();
 
-        // Step 1: Count frequency
+        // Count frequency
         for (int num : list) {
             freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
 
-        // Step 2: Find first with frequency 1
+        // Find first with frequency 1
         for (int num : list) {
             if (freq.get(num) == 1) {
                 return num;
@@ -273,5 +273,27 @@ public class Arraylist {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(4, 5, 1, 2, 0, 4, 1, 2));
         System.out.println(findFirstNonRepeating(list));
+    }
+}
+
+// Find Maximum Element
+import java.util.*;
+
+public class Arraylist {
+    public static int findMax(ArrayList<Integer> list) {
+        int max = list.get(0); 
+
+        for (int num : list) {
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        return max;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(10, 5, 20, 8));
+        System.out.println(findMax(list));
     }
 }
