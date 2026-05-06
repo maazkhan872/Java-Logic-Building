@@ -247,3 +247,31 @@ public class Arraylist {
         System.out.println("Max value is: " + max);
     }
 }
+
+// First Non-Repeating Element
+import java.util.*;
+
+public class Arraylist {
+    public static int findFirstNonRepeating(ArrayList<Integer> list) {
+        HashMap<Integer, Integer> freq = new HashMap<>();
+
+        // Step 1: Count frequency
+        for (int num : list) {
+            freq.put(num, freq.getOrDefault(num, 0) + 1);
+        }
+
+        // Step 2: Find first with frequency 1
+        for (int num : list) {
+            if (freq.get(num) == 1) {
+                return num;
+            }
+        }
+
+        return -1;
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Integer> list = new ArrayList<>(Arrays.asList(4, 5, 1, 2, 0, 4, 1, 2));
+        System.out.println(findFirstNonRepeating(list));
+    }
+}
