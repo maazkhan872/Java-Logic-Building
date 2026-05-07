@@ -2,6 +2,22 @@ package Java_Coding_Working;
 
 import java.util.ArrayList;
 
+import java.util.ArrayList;
+
+// Get Element by Index
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("Ayesha Khan");
+        names.add("Aliza Ahmed");
+        names.add("Orhan");
+
+        System.out.println(names.get(1));
+    }
+}
+
 public class Arraylist {
     public static void main(String[] args) {
 
