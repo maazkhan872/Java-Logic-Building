@@ -18,6 +18,24 @@ public class Arraylist {
     }
 }
 
+// Update Element
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<String> city = new ArrayList<>();
+
+        city.add("Karachi");
+        city.add("Lahore");
+
+        city.set(1, "Islamabad");
+
+        System.out.println(city);
+    }
+}
+
+
 public class Arraylist {
     public static void main(String[] args) {
 
