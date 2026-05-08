@@ -68,6 +68,23 @@ public class Arraylist {
     }
 }
 
+// Using Enhanced For Loop
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> list = new ArrayList<>();
+
+        list.add(5);
+        list.add(10);
+        list.add(15);
+
+        for(Integer num : list) {
+            System.out.println(num);
+        }
+    }
+}
 
 public class Arraylist {
     public static void main(String[] args) {
