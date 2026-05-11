@@ -86,6 +86,23 @@ public class Arraylist {
     }
 }
 
+// Clear Entire ArrayList
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Java");
+        list.add("Python");
+
+        list.clear();
+
+        System.out.println(list);
+    }
+}
+
 // Check Empty or Not
 import java.util.ArrayList;
 
