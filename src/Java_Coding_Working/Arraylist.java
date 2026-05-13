@@ -135,6 +135,24 @@ public class Arraylist {
     }
 }
 
+// Reverse ArrayList
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("A");
+        names.add("B");
+        names.add("C");
+
+        Collections.reverse(names);
+
+        System.out.println(names);
+    }
+}
 
 public class Arraylist {
     public static void main(String[] args) {
