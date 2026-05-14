@@ -82,3 +82,21 @@ Internship preparation
 Technical interview preparation
 Developers revising Java concepts
 Anyone who wants complete Java practice
+
+🛠 Technologies Used
+Java
+IntelliJ IDEA / VS Code
+Git & GitHub
+
+📈 Future Updates
+
+Upcoming additions:
+
+Spring Boot
+REST APIs
+Java Projects
+Design Patterns
+JavaFX
+Advanced DSA
+Backend Development
+Microservices Basics
