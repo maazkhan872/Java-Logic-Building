@@ -147,7 +147,9 @@ public class Arraylist {
         names.add("A");
         names.add("B");
         names.add("C");
-
+        names.add("D");
+        names.add("E");
+        
         Collections.reverse(names);
 
         System.out.println(names);
