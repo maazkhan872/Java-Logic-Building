@@ -168,6 +168,7 @@ public class Arraylist {
         students.add("Sara");
         students.add("Hina");
         students.add("Usman");
+        students.add("Uzair");
 
         // Printing elements
         for (String name : students) {
