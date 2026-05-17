@@ -63,6 +63,9 @@ public class Arraylist {
 
         fruits.add("Apple");
         fruits.add("Mango");
+        fruits.add("Banana");
+        fruits.add("Orange");
+        fruits.add("Graphes");
 
         System.out.println(fruits.contains("Mango"));
     }
