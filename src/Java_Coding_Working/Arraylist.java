@@ -128,6 +128,8 @@ public class Arraylist {
         numbers.add(50);
         numbers.add(10);
         numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
 
         Collections.sort(numbers);
 
