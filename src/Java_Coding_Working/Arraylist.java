@@ -71,6 +71,39 @@ public class Arraylist {
     }
 }
 
+// Count Even and Odd Numbers
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(11);
+        numbers.add(20);
+        numbers.add(35);
+        numbers.add(40);
+        numbers.add(55);
+        numbers.add(60);
+
+        int even = 0;
+        int odd = 0;
+
+        for(Integer num : numbers) {
+
+            if(num % 2 == 0) {
+                even++;
+            }
+            else {
+                odd++;
+            }
+        }
+
+        System.out.println("Even Numbers: " + even);
+        System.out.println("Odd Numbers: " + odd);
+    }
+}
+
 // Using Enhanced For Loop
 import java.util.ArrayList;
 
