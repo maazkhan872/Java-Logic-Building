@@ -74,7 +74,7 @@ public class Arraylist {
 // Count Even and Odd Numbers
 import java.util.ArrayList;
 
-public class Main {
+public class Arraylist {
     public static void main(String[] args) {
 
         ArrayList<Integer> numbers = new ArrayList<>();
@@ -101,6 +101,32 @@ public class Main {
 
         System.out.println("Even Numbers: " + even);
         System.out.println("Odd Numbers: " + odd);
+    }
+}
+
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(10);
+        numbers.add(50);
+        numbers.add(20);
+        numbers.add(90);
+        numbers.add(40);
+
+        int max = numbers.get(0);
+
+        for(int i = 0; i < numbers.size(); i++) {
+
+            if(numbers.get(i) > max) {
+                max = numbers.get(i);
+            }
+        }
+
+        System.out.println("Maximum Number: " + max);
     }
 }
 
