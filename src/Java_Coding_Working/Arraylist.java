@@ -134,6 +134,29 @@ public class Arraylist {
     }
 }
 
+// Find Sum of All Elements
+import java.util.ArrayList;
+
+public class Arraylist {
+    public static void main(String[] args) {
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        numbers.add(5);
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+
+        int sum = 0;
+
+        for(Integer num : numbers) {
+
+            sum = sum + num;
+        }
+
+        System.out.println("Total Sum: " + sum);
+    }
+}
 
 
 import java.util.ArrayList;
