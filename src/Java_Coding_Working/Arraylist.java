@@ -118,6 +118,8 @@ public class Arraylist {
         numbers.add(20);
         numbers.add(40);
         numbers.add(10);
+        numbers.add(50);
+        numbers.add(40);
 
         for(int i = 0; i < numbers.size(); i++) {
 
