@@ -28,4 +28,30 @@ public class Linkedlist {
     }
 }
 
+// Task Queue System
+import java.util.LinkedList;
 
+public class linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> tasks = new LinkedList<>();
+
+        // Normal tasks
+        tasks.add("Complete API");
+        tasks.add("Fix Bug");
+        tasks.add("Push Code");
+
+        // Urgent task
+        tasks.addFirst("Production Issue");
+
+        // Remove completed task
+        tasks.remove("Fix Bug");
+
+        // Print tasks
+        System.out.println("Remaining Tasks:");
+
+        for(String task : tasks) {
+            System.out.println(task);
+        }
+    }
+}
