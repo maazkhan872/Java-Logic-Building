@@ -15,6 +15,8 @@ public class Linkedlist {
         students.add("Maaz");
         students.add("Usman");
         students.add("Hamza");
+        students.add("Hanza");
+        students.add("Hunzala");
 
         // Remove one student
         students.remove("Ahmed");
