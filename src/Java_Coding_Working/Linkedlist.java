@@ -97,6 +97,8 @@ public class Linkedlist {
         numbers.add(45);
         numbers.add(120);
         numbers.add(30);
+        numbers.add(40);
+        numbers.add(20);
 
         int max = numbers.get(0);
 
