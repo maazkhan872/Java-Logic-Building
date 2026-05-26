@@ -72,14 +72,17 @@ public class Linkedlist {
         numbers.add(20);
         numbers.add(30);
         numbers.add(40);
+        numbers.add(50);
+        numbers.add(60);
 
-        System.out.println("Original List:");
+        
+        System.out.println("Original List is:");
         System.out.println(numbers);
 
         // Reverse list
         Collections.reverse(numbers);
 
-        System.out.println("Reversed List:");
+        System.out.println("Reversed List is:");
         System.out.println(numbers);
     }
 }
