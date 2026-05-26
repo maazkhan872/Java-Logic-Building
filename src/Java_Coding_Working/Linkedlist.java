@@ -58,3 +58,28 @@ public class linkedlist {
         }
     }
 }
+
+// Reverse a LinkedList
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        System.out.println("Original List:");
+        System.out.println(numbers);
+
+        // Reverse list
+        Collections.reverse(numbers);
+
+        System.out.println("Reversed List:");
+        System.out.println(numbers);
+    }
+}
