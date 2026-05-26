@@ -83,3 +83,30 @@ public class Linkedlist {
         System.out.println(numbers);
     }
 }
+
+// Find Maximum Number in LinkedList
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(15);
+        numbers.add(90);
+        numbers.add(45);
+        numbers.add(120);
+        numbers.add(30);
+
+        int max = numbers.get(0);
+
+        for(int num : numbers) {
+
+            if(num > max) {
+                max = num;
+            }
+        }
+
+        System.out.println("Maximum Number: " + max);
+    }
+}
