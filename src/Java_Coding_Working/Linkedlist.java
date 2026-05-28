@@ -115,3 +115,34 @@ public class Linkedlist {
         System.out.println("Maximum Number: " + max);
     }
 }
+
+// Remove Duplicate Elements
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(10);
+        numbers.add(30);
+        numbers.add(20);
+
+        LinkedList<Integer> uniqueList = new LinkedList<>();
+
+        for(int num : numbers) {
+
+            if(!uniqueList.contains(num)) {
+                uniqueList.add(num);
+            }
+        }
+
+        System.out.println("Original List:");
+        System.out.println(numbers);
+
+        System.out.println("Unique List:");
+        System.out.println(uniqueList);
+    }
+}
