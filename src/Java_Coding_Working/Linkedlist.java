@@ -146,3 +146,29 @@ public class Linkedlist {
         System.out.println(uniqueList);
     }
 }
+
+// Search an Element
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(5);
+        numbers.add(15);
+        numbers.add(25);
+        numbers.add(35);
+
+        int searchNumber = 25;
+
+        if(numbers.contains(searchNumber)) {
+
+            System.out.println(searchNumber + " Found in LinkedList");
+
+        } else {
+
+            System.out.println(searchNumber + " Not Found");
+        }
+    }
+}
