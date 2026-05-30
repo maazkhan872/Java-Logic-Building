@@ -186,6 +186,8 @@ public class Linkedlist {
         numbers.add(20);
         numbers.add(25);
         numbers.add(30);
+        numbers.add(35);
+        numbers.add(40);
 
         int count = 0;
 
