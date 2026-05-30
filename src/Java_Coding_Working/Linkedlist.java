@@ -172,3 +172,30 @@ public class Linkedlist {
         }
     }
 }
+
+// Count Even Numbers
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+        numbers.add(25);
+        numbers.add(30);
+
+        int count = 0;
+
+        for (int num : numbers) {
+
+            if (num % 2 == 0) {
+                count++;
+            }
+        }
+
+        System.out.println("Total Even Numbers: " + count);
+    }
+}
