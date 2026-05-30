@@ -201,3 +201,26 @@ public class Linkedlist {
         System.out.println("Total Even Numbers: " + count);
     }
 }
+
+// Calculate Sum of All Elements
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        int sum = 0;
+
+        for (int num : numbers) {
+            sum += num;
+        }
+
+        System.out.println("Sum = " + sum);
+    }
+}
