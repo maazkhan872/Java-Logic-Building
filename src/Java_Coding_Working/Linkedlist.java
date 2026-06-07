@@ -228,3 +228,29 @@ public class Linkedlist {
         System.out.println("Sum = " + sum);
     }
 }
+
+// Find the Smallest Number
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(45);
+        numbers.add(12);
+        numbers.add(78);
+        numbers.add(5);
+        numbers.add(30);
+
+        int min = numbers.get(0);
+
+        for (int num : numbers) {
+            if (num < min) {
+                min = num;
+            }
+        }
+
+        System.out.println("Smallest Number: " + min);
+    }
+}
