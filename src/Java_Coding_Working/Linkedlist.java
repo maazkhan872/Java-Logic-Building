@@ -254,3 +254,31 @@ public class Linkedlist {
         System.out.println("Smallest Number: " + min);
     }
 }
+
+// Count Occurrences of a Number
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(10);
+        numbers.add(30);
+        numbers.add(10);
+        numbers.add(40);
+
+        int target = 10;
+        int count = 0;
+
+        for (int num : numbers) {
+            if (num == target) {
+                count++;
+            }
+        }
+
+        System.out.println(target + " appears " + count + " times.");
+    }
+}
