@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*
+
 public class Array {
 
 	public static void main(String args[]) {
@@ -462,5 +462,35 @@ public class Array {
 
         System.out.println("Maximum element: " + findMax(numbers));
     }
-} */
+} 
 
+// sorting array
+public class Array {
+    public static void main(String[] args) {
+
+        int[] arr = {50, 10, 30, 20, 40};
+
+        System.out.print("Before Sorting: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        // Bubble Sort
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+
+                if (arr[j] > arr[j + 1]) {
+                    // Swap
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.print("\nAfter Sorting: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
