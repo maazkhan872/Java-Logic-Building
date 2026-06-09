@@ -384,7 +384,7 @@ public class Array {
 
     public static void main(String[] args) {
 
-        int[] arr = {10,20,5,8,30};
+        int[] arr = {10,20,5,8,30,35, 40};
 
         int first = arr[0];
 
