@@ -468,7 +468,7 @@ public class Array {
 public class Array {
     public static void main(String[] args) {
 
-        int[] arr = {50, 10, 30, 20, 40, 80};
+        int[] arr = {50, 10, 30, 20, 40, 80, 90, 100};
 
         System.out.print("Before Sorting: ");
         for (int num : arr) {
@@ -480,6 +480,7 @@ public class Array {
             for (int j = 0; j < arr.length - 1 - i; j++) {
 
                 if (arr[j] > arr[j + 1]) {
+
                     // Swap
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
