@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*
+
  * Note: 
  // if Statement: The if statement executes a block of code only when the condition is true.
 
@@ -621,4 +621,22 @@ public class ifelse_logic {
         }
     }
 }
-*/
+
+// Discount Logic
+public class ielse_logic{
+    public static void main(String[] args) {
+
+        double amount = 12000;
+        boolean premiumUser = true;
+
+        if (amount >= 10000 && premiumUser) {
+            System.out.println("30% Discount");
+        } else if (amount >= 10000) {
+            System.out.println("20% Discount");
+        } else if (amount >= 5000) {
+            System.out.println("10% Discount");
+        } else {
+            System.out.println("No Discount");
+        }
+    }
+}
