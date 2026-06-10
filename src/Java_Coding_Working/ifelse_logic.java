@@ -640,3 +640,20 @@ public class ielse_logic{
         }
     }
 }
+
+// Login Access Based on Role
+public class ifelse_logic {
+    public static void main(String[] args) {
+
+        String role = "ADMIN";
+        boolean active = true;
+
+        if (role.equals("ADMIN") && active) {
+            System.out.println("Full Access");
+        } else if (role.equals("USER") && active) {
+            System.out.println("Limited Access");
+        } else {
+            System.out.println("Access Denied");
+        }
+    }
+}
