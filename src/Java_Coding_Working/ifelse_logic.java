@@ -635,6 +635,8 @@ public class ielse_logic{
             System.out.println("20% Discount");
         } else if (amount >= 5000) {
             System.out.println("10% Discount");
+        } else if (amount >= 3000) {
+            System.out.println("7% Discount");
         } else {
             System.out.println("No Discount");
         }
@@ -649,9 +651,9 @@ public class ifelse_logic {
         boolean active = true;
 
         if (role.equals("ADMIN") && active) {
-            System.out.println("Full Access");
+            System.out.println("Full Access for an admin");
         } else if (role.equals("USER") && active) {
-            System.out.println("Limited Access");
+            System.out.println("Limited Access for a user");
         } else {
             System.out.println("Access Denied");
         }
