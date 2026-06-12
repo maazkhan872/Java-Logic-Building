@@ -283,7 +283,7 @@ public class Linkedlist {
     }
 }
 
-
+// Find the Middle Element
 import java.util.LinkedList;
 
 public class Linkedlist {
@@ -300,5 +300,24 @@ public class Linkedlist {
         int middleIndex = numbers.size() / 2;
 
         System.out.println("Middle Element: " + numbers.get(middleIndex));
+    }
+}
+
+// Check if a LinkedList is Empty
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> names = new LinkedList<>();
+
+        names.add("Ali");
+        names.add("Ahmed");
+
+        if (names.isEmpty()) {
+            System.out.println("LinkedList is empty");
+        } else {
+            System.out.println("LinkedList contains data");
+        }
     }
 }
