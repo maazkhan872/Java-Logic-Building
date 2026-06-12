@@ -296,10 +296,12 @@ public class Linkedlist {
         numbers.add(30);
         numbers.add(40);
         numbers.add(50);
+        numbers.add(60);
+        numbers.add(70);
 
         int middleIndex = numbers.size() / 2;
 
-        System.out.println("Middle Element: " + numbers.get(middleIndex));
+        System.out.println("Middle Element is: " + numbers.get(middleIndex));
     }
 }
 
