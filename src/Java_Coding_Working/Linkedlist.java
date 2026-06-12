@@ -282,3 +282,23 @@ public class Linkedlist {
         System.out.println(target + " appears " + count + " times.");
     }
 }
+
+
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        int middleIndex = numbers.size() / 2;
+
+        System.out.println("Middle Element: " + numbers.get(middleIndex));
+    }
+}
