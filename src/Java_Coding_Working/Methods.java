@@ -1,6 +1,6 @@
 package Java_Coding_Working;
 
-/*
+
 // creating a method
 public class Methods {
 	
@@ -274,4 +274,30 @@ public class Methods {
         int result = calculateSum(5);
         System.out.println("Sum: " + result);
     }
-}*/
+}
+
+import java.util.Scanner;
+
+public class Methods {
+
+    public static int sumOfDigits(int num) {
+        int sum = 0;
+
+        while (num > 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+
+        return sum;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter Number: ");
+        int num = sc.nextInt();
+
+        System.out.println("Sum = " + sumOfDigits(num));
+    }
+}
