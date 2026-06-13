@@ -341,3 +341,34 @@ public class Linkedlist {
         System.out.println("Last Element: " + cities.getLast());
     }
 }
+
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static int findMax(LinkedList<Integer> list) {
+
+        int max = list.getFirst();
+
+        for (int num : list) {
+            if (num > max) {
+                max = num;
+            }
+        }
+
+        return max;
+    }
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> list = new LinkedList<>();
+
+        list.add(10);
+        list.add(50);
+        list.add(20);
+        list.add(80);
+        list.add(30);
+
+        System.out.println("Maximum Element: " + findMax(list));
+    }
+}
