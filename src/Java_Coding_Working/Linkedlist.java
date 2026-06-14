@@ -372,3 +372,37 @@ public class Linkedlist {
         System.out.println("Maximum Element: " + findMax(list));
     }
 }
+
+
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> list = new LinkedList<>();
+
+        // Add elements
+        list.add(10);
+        list.add(20);
+        list.add(30);
+        list.add(40);
+        list.add(50);
+
+        // Print LinkedList
+        System.out.println("Original List: " + list);
+
+        // Search element
+        if (list.contains(30)) {
+            System.out.println("30 found in the list");
+        } else {
+            System.out.println("30 not found");
+        }
+
+        // Remove element
+        list.remove(Integer.valueOf(20));
+
+        // Print updated list
+        System.out.println("Updated List: " + list);
+    }
+}
