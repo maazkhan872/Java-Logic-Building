@@ -476,3 +476,31 @@ public class Linkedlist {
         System.out.println("Longest Name: " + longest);
     }
 }
+
+// Containing Only Even Numbers
+import java.util.LinkedList;
+
+public class linkedList {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(15);
+        numbers.add(20);
+        numbers.add(25);
+        numbers.add(30);
+
+        LinkedList<Integer> evenNumbers = new LinkedList<>();
+
+        for(int num : numbers) {
+
+            if(num % 2 == 0) {
+                evenNumbers.add(num);
+            }
+        }
+
+        System.out.println("Original List: " + numbers);
+        System.out.println("Even List: " + evenNumbers);
+    }
+}
