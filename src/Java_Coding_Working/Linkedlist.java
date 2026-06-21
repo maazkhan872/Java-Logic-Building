@@ -450,3 +450,29 @@ public class Linkedlist {
         System.out.println("Total Characters: " + totalLength);
     }
 }
+
+// Find the Longest Name
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> names = new LinkedList<>();
+
+        names.add("Ali");
+        names.add("Muhammad");
+        names.add("Usman");
+        names.add("Ahmed");
+
+        String longest = names.getFirst();
+
+        for(String name : names) {
+
+            if(name.length() > longest.length()) {
+                longest = name;
+            }
+        }
+
+        System.out.println("Longest Name: " + longest);
+    }
+}
