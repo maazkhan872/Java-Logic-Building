@@ -428,3 +428,25 @@ public class Linkedlist {
         System.out.println(names);
     }
 }
+
+// Count Total String Lengths
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> names = new LinkedList<>();
+
+        names.add("Ali");
+        names.add("Ahmed");
+        names.add("Usman");
+
+        int totalLength = 0;
+
+        for(String name : names) {
+            totalLength += name.length();
+        }
+
+        System.out.println("Total Characters: " + totalLength);
+    }
+}
