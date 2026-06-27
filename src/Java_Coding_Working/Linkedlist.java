@@ -504,3 +504,23 @@ public class linkedList {
         System.out.println("Even List: " + evenNumbers);
     }
 }
+
+// Merge Two LinkedLists
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> list1 = new LinkedList<>();
+        list1.add("Java");
+        list1.add("Python");
+
+        LinkedList<String> list2 = new LinkedList<>();
+        list2.add("C++");
+        list2.add("JavaScript");
+
+        list1.addAll(list2);
+
+        System.out.println("Merged List: " + list1);
+    }
+}
