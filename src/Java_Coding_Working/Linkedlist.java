@@ -524,3 +524,23 @@ public class Linkedlist {
         System.out.println("Merged List: " + list1);
     }
 }
+
+// Remove All Negative Numbers
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(-5);
+        numbers.add(20);
+        numbers.add(-15);
+        numbers.add(30);
+
+        numbers.removeIf(num -> num < 0);
+
+        System.out.println("Updated List: " + numbers);
+    }
+}
