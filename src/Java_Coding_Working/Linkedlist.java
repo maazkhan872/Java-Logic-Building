@@ -565,3 +565,26 @@ public class Linkedlist {
         System.out.println(languages);
     }
 }
+
+// Print Elements at Odd Indexes
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+        numbers.add(60);
+
+        System.out.println("Elements at Odd Indexes:");
+
+        for (int i = 1; i < numbers.size(); i += 2) {
+            System.out.println(numbers.get(i));
+        }
+    }
+}
