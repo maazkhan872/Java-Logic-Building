@@ -544,3 +544,24 @@ public class Linkedlist {
         System.out.println("Updated List: " + numbers);
     }
 }
+
+// Element at a Specific Index
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<String> languages = new LinkedList<>();
+
+        languages.add("Java");
+        languages.add("C++");
+        languages.add("JavaScript");
+        languages.add("Go");
+
+        // Insert at index 2
+        languages.add(2, "Python");
+
+        System.out.println("Updated LinkedList:");
+        System.out.println(languages);
+    }
+}
