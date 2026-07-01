@@ -613,3 +613,24 @@ public class Linkedlist {
     }
 }
 
+//Copy One LinkedList into Another
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+ public static void main(String[] args) {
+
+     LinkedList<String> courses = new LinkedList<>();
+
+     courses.add("Java");
+     courses.add("Spring Boot");
+     courses.add("SQL");
+
+     LinkedList<String> copiedList = new LinkedList<>();
+
+     copiedList.addAll(courses);
+
+     System.out.println("Original List: " + courses);
+     System.out.println("Copied List: " + copiedList);
+ }
+}
