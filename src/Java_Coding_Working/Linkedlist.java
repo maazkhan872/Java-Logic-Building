@@ -659,3 +659,35 @@ public class Linkedlist {
         System.out.println(cities);
     }
 }
+
+// Check if LinkedList Contains Only Even Numbers
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+
+        boolean allEven = true;
+
+        for (int num : numbers) {
+
+            if (num % 2 != 0) {
+                allEven = false;
+                break;
+            }
+        }
+
+        if (allEven) {
+            System.out.println("All numbers are even.");
+        } else {
+            System.out.println("LinkedList contains odd numbers.");
+        }
+    }
+}
