@@ -634,3 +634,28 @@ public class Linkedlist {
      System.out.println("Copied List: " + copiedList);
  }
 }
+
+// Swap First and Last Elements
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> cities = new LinkedList<>();
+
+        cities.add("Karachi");
+        cities.add("Lahore");
+        cities.add("Islamabad");
+        cities.add("Peshawar");
+
+        String first = cities.getFirst();
+        String last = cities.getLast();
+
+        cities.set(0, last);
+        cities.set(cities.size() - 1, first);
+
+        System.out.println("Updated List:");
+        System.out.println(cities);
+    }
+}
