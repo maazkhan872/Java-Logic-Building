@@ -691,3 +691,35 @@ public class Linkedlist {
         }
     }
 }
+
+// Find the Second Largest Element
+import java.util.LinkedList;
+
+public class SecondLargestElement {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(12);
+        numbers.add(45);
+        numbers.add(8);
+        numbers.add(67);
+        numbers.add(34);
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int num : numbers) {
+
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+
+        System.out.println("Second Largest: " + secondLargest);
+    }
+}
