@@ -695,7 +695,7 @@ public class Linkedlist {
 // Find the Second Largest Element
 import java.util.LinkedList;
 
-public class SecondLargestElement {
+public class Linkedlist {
 
     public static void main(String[] args) {
 
@@ -721,5 +721,29 @@ public class SecondLargestElement {
         }
 
         System.out.println("Second Largest: " + secondLargest);
+    }
+}
+
+// Remove All Vowels from a LinkedList of Strings
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static void main(String[] args) {
+
+        LinkedList<String> words = new LinkedList<>();
+
+        words.add("Apple");
+        words.add("Banana");
+        words.add("Orange");
+        words.add("Mango");
+        words.add("Umbrella");
+
+        words.removeIf(word -> {
+            char ch = Character.toLowerCase(word.charAt(0));
+            return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+        });
+
+        System.out.println(words);
     }
 }
