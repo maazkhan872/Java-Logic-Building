@@ -737,6 +737,7 @@ public class Linkedlist {
         words.add("Banana");
         words.add("Orange");
         words.add("Mango");
+        words.add("Pineapple");
         words.add("Umbrella");
 
         words.removeIf(word -> {
