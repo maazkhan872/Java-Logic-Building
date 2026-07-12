@@ -77,6 +77,8 @@ public class Linkedlist {
         numbers.add(60);
         numbers.add(70);
         numbers.add(80);
+        numbers.add(90);
+        numbers.add(100);
 
         
         System.out.println("Original List is:");
