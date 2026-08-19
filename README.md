@@ -7,9 +7,7 @@ This repository is not just about theory — it is a complete hands-on coding pr
 
 Whether you are a beginner, student, internship candidate, or aspiring software engineer, this repository provides a structured roadmap to build strong programming skills in Java.
 
-📚 What You Will Learn
-
-This repository covers Java from A to Z, including:
+📚 What You Will learn
 
 🔹 Core Java Fundamentals
 Java Introduction
