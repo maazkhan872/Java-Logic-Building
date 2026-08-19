@@ -52,6 +52,7 @@ Queues
 Trees
 Hashing
 Time Complexity
+Array List
 
 🔹 Real-World Development
 Clean Coding Practices
