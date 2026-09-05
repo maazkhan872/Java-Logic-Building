@@ -718,3 +718,25 @@ public class linkedlist {
     }
 }
 
+import java.util.linkedlist;
+
+public class Linkedlist {
+    public static void main(String args[]) {
+
+        linkedlist<String> numbers = new Linkedlist<>;
+
+        numbers.add("Karachi");
+        numbers.add("lahore");
+        numbers.add("Rawalpindi");
+        numbers.add("Quetta");
+        numbers.add("Sukkur");
+
+        System.out.println("Name is: " + numbers);
+
+        String name = numbers.removelist();
+        numbers.addFirst(name);
+
+        System.out.println("New list is: "+numbers);
+        
+    }
+}
