@@ -694,3 +694,27 @@ public class Linkedlist {
     }
 }
 
+import java.util.linkedlist;
+
+public class linkedlist {
+
+    public static void main (String args[]) {
+
+        Linkedlist<integer> numbers = new Linkedlist<>;
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        System.out.println("Number will be: " + numbers);
+
+        int last = number.removeLast();
+        number.addFirst(last);
+
+        System.out.println("After add last element in a first: " + numbers);
+    
+    }
+}
+
