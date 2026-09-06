@@ -773,3 +773,26 @@ public class Linkedlist {
         
     }
 }
+
+
+import java.util.LinkedList;
+
+public class Linkedlist {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        System.out.println("Before: " + numbers);
+
+        int first = numbers.removeFirst();
+        numbers.addLast(first);
+
+        System.out.println("After: " + numbers);
+    }
+}
