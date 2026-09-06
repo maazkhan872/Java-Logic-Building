@@ -740,3 +740,36 @@ public class Linkedlist {
         
     }
 }
+
+import java.util.linkedlist;
+
+public class Linkedlist {
+
+    public static void main (String args[]) {
+
+        linkedlist<Integer> numbers = new linkedlist();
+        numbers.add(10);
+        numbers.add(50);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(15);
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int num : numbers) {
+
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            }
+            else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+
+        System.out.println("Largest" + largest);
+        System.out.println("Second Largest" + second largest);
+        
+    }
+}
