@@ -796,3 +796,35 @@ public class Linkedlist {
         System.out.println("After: " + numbers);
     }
 }
+
+import java.util.LinkedList;
+
+public class SeparateNumbers {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(-5);
+        numbers.add(20);
+        numbers.add(-15);
+        numbers.add(30);
+
+        LinkedList<Integer> positive = new LinkedList<>();
+        LinkedList<Integer> negative = new LinkedList<>();
+
+        for (int num : numbers) {
+
+            if (num >= 0) {
+                positive.add(num);
+            } else {
+                negative.add(num);
+            }
+        }
+
+        System.out.println("Original List: " + numbers);
+        System.out.println("Positive Numbers: " + positive);
+        System.out.println("Negative Numbers: " + negative);
+    }
+}
