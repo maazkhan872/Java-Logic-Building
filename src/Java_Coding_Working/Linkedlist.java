@@ -21,6 +21,7 @@ public class Linkedlist {
 
         // Remove one student
         students.remove("Ahmed");
+        students.remove("Ali");
 
         // Print students
         System.out.println("Student List:");
