@@ -862,3 +862,41 @@ public class Linkedlist {
         }
     }
 }
+
+import java.util.LinkedList;
+
+public class MoveZeros {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(0);
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(0);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(0);
+
+        System.out.println("Original List: " + numbers);
+
+        int zeroCount = 0;
+
+        for (int i = 0; i < numbers.size(); ) {
+
+            if (numbers.get(i) == 0) {
+                numbers.remove(i);
+                zeroCount++;
+            } else {
+                i++;
+            }
+        }
+
+        for (int i = 0; i < zeroCount; i++) {
+            numbers.addLast(0);
+        }
+
+        System.out.println("Updated List: " + numbers);
+    }
+}
