@@ -829,3 +829,36 @@ public class SeparateNumbers {
         System.out.println("Negative Numbers: " + negative);
     }
 }
+
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+    public static void main(String[] args) {
+
+        LinkedList<Integer> numbers = new LinkedList<>();
+
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        numbers.add(40);
+        numbers.add(50);
+
+        int target = 60;
+
+        for (int i = 0; i < numbers.size(); i++) {
+
+            for (int j = i + 1; j < numbers.size(); j++) {
+
+                if (numbers.get(i) + numbers.get(j) == target) {
+
+                    System.out.println(
+                        "Pair: " + numbers.get(i) +
+                        " + " + numbers.get(j) +
+                        " = " + target
+                    );
+                }
+            }
+        }
+    }
+}
