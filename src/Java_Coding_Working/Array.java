@@ -525,3 +525,41 @@ public class Array{
         System.out.println("Difference: " + difference);
     }
 }
+
+package Java_Coding_Working;
+
+public class NegativeFirst {
+
+    public static void main(String[] args) {
+
+        int[] arr = {10, -5, 20, -15, 30, -2};
+
+        int[] result = new int[arr.length];
+
+        int index = 0;
+
+        // Add negative numbers first
+        for (int num : arr) {
+
+            if (num < 0) {
+                result[index] = num;
+                index++;
+            }
+        }
+
+        // Add positive numbers
+        for (int num : arr) {
+
+            if (num >= 0) {
+                result[index] = num;
+                index++;
+            }
+        }
+
+        System.out.println("Updated Array:");
+
+        for (int num : result) {
+            System.out.print(num + " ");
+        }
+    }
+}
