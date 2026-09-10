@@ -594,3 +594,24 @@ public class Array{
         System.out.println("Numbers greater than average = " + count);
     }
 }
+
+
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {5, 12, 8, 20, 15, 3, 10};
+
+        int count = 0;
+
+        for (int number : numbers) {
+
+            if (number > 10) {
+                count++;
+            }
+        }
+
+        System.out.println("Numbers greater than 10 = " + count);
+    }
+}
