@@ -528,7 +528,7 @@ public class Array{
 
 package Java_Coding_Working;
 
-public class NegativeFirst {
+public class Array {
 
     public static void main(String[] args) {
 
@@ -561,5 +561,36 @@ public class NegativeFirst {
         for (int num : result) {
             System.out.print(num + " ");
         }
+    }
+}
+
+
+public class Array{
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 20, 30, 40, 50};
+
+        int sum = 0;
+
+        // Find sum
+        for (int number : numbers) {
+            sum = sum + number;
+        }
+
+        // Calculate average
+        double average = (double) sum / numbers.length;
+
+        // Count numbers greater than average
+        int count = 0;
+
+        for (int number : numbers) {
+            if (number > average) {
+                count++;
+            }
+        }
+
+        System.out.println("Average = " + average);
+        System.out.println("Numbers greater than average = " + count);
     }
 }
