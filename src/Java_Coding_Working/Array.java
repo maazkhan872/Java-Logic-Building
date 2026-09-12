@@ -641,3 +641,33 @@ public class Array {
         System.out.println("Second Largest = " + secondLargest);
     }
 }
+
+
+package Java_Coding_Working;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {5, 3, 8, 3, 10, 5};
+
+        int duplicate = -1;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = i + 1; j < numbers.length; j++) {
+
+                if (numbers[i] == numbers[j]) {
+                    duplicate = numbers[i];
+                    break;
+                }
+            }
+
+            if (duplicate != -1) {
+                break;
+            }
+        }
+
+        System.out.println("First Duplicate = " + duplicate);
+    }
+}
