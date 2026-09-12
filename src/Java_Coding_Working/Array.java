@@ -615,3 +615,29 @@ public class Array {
         System.out.println("Numbers greater than 10 = " + count);
     }
 }
+
+package Java_Coding_Working;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 25, 8, 40, 30};
+
+        int largest = numbers[0];
+        int secondLargest = numbers[0];
+
+        for (int number : numbers) {
+
+            if (number > largest) {
+                secondLargest = largest;
+                largest = number;
+            }
+            else if (number > secondLargest && number != largest) {
+                secondLargest = number;
+            }
+        }
+
+        System.out.println("Second Largest = " + secondLargest);
+    }
+}
