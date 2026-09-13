@@ -695,3 +695,35 @@ public class Array {
         System.out.println("Missing Number = " + missingNumber);
     }
 }
+
+package Java_Coding_Working;
+
+public class MoveZeros {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {0, 5, 0, 3, 8, 0, 2};
+
+        int index = 0;
+
+        // Put non-zero elements first
+        for (int number : numbers) {
+
+            if (number != 0) {
+                numbers[index] = number;
+                index++;
+            }
+        }
+
+        // Put zeros in remaining positions
+        while (index < numbers.length) {
+            numbers[index] = 0;
+            index++;
+        }
+
+        // Print array
+        for (int number : numbers) {
+            System.out.print(number + " ");
+        }
+    }
+}
