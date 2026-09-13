@@ -671,3 +671,27 @@ public class Array {
         System.out.println("First Duplicate = " + duplicate);
     }
 }
+
+package Java_Coding_Working;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {1, 2, 3, 5, 6};
+
+        int n = numbers.length + 1;
+
+        int expectedSum = n * (n + 1) / 2;
+
+        int actualSum = 0;
+
+        for (int number : numbers) {
+            actualSum = actualSum + number;
+        }
+
+        int missingNumber = expectedSum - actualSum;
+
+        System.out.println("Missing Number = " + missingNumber);
+    }
+}
