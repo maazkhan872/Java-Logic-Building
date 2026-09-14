@@ -727,3 +727,32 @@ public class MoveZeros {
         }
     }
 }
+
+package Java_Coding_Working;
+
+public class FirstRepeated {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {4, 7, 2, 9, 7, 5, 2};
+
+        int repeated = -1;
+
+        for (int i = 0; i < numbers.length; i++) {
+
+            for (int j = i + 1; j < numbers.length; j++) {
+
+                if (numbers[i] == numbers[j]) {
+                    repeated = numbers[i];
+                    break;
+                }
+            }
+
+            if (repeated != -1) {
+                break;
+            }
+        }
+
+        System.out.println("First Repeated Element = " + repeated);
+    }
+}
