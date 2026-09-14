@@ -756,3 +756,31 @@ public class FirstRepeated {
         System.out.println("First Repeated Element = " + repeated);
     }
 }
+
+package Java_Coding_Working;
+
+public class EvenOddDifference {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 5, 8, 3, 6, 7};
+
+        int evenSum = 0;
+        int oddSum = 0;
+
+        for (int number : numbers) {
+
+            if (number % 2 == 0) {
+                evenSum = evenSum + number;
+            } else {
+                oddSum = oddSum + number;
+            }
+        }
+
+        int difference = evenSum - oddSum;
+
+        System.out.println("Even Sum = " + evenSum);
+        System.out.println("Odd Sum = " + oddSum);
+        System.out.println("Difference = " + difference);
+    }
+}
