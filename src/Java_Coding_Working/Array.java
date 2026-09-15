@@ -784,3 +784,27 @@ public class EvenOddDifference {
         System.out.println("Difference = " + difference);
     }
 }
+
+
+package Java_Coding_Working;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {10, 15, 8, 20, 12};
+
+        int largestDifference = 0;
+
+        for (int i = 0; i < numbers.length - 1; i++) {
+
+            int difference = Math.abs(numbers[i] - numbers[i + 1]);
+
+            if (difference > largestDifference) {
+                largestDifference = difference;
+            }
+        }
+
+        System.out.println("Largest Difference = " + largestDifference);
+    }
+}
