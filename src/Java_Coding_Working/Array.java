@@ -840,3 +840,24 @@ public class Array {
         System.out.println("Zero = " + zero);
     }
 }
+
+package Java_Coding_Working;
+
+public class Array {
+
+    public static void main(String[] args) {
+
+        int[] numbers = {7, -3, 5, -1, 9, 2};
+
+        int closest = numbers[0];
+
+        for (int number : numbers) {
+
+            if (Math.abs(number) < Math.abs(closest)) {
+                closest = number;
+            }
+        }
+
+        System.out.println("Closest to Zero = " + closest);
+    }
+}
