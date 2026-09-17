@@ -158,8 +158,6 @@ public class Basics_java {
     	System.out.println(c);
     	c = a / b;
     	System.out.println(c);
-    	c = a % b;
-    	System.out.println(c);
     }
 }
 
