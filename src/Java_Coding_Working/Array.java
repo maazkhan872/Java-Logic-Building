@@ -17,6 +17,7 @@ public class Array {
 		System.out.println("Eight Number is: " + array[7]);
 		System.out.println("Ninth Number is: " + array[8]);
 		System.out.println("Tenth Number is: " + array[9]);
+		System.out.println("Eleventh Number is: " + array[10]);
 		
 		System.out.println("Array length is: " + array.length);
 	}
