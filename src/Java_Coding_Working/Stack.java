@@ -36,3 +36,20 @@ public class Main {
         System.out.println("After Pop: " + stack);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        System.out.println("Is Stack Empty? " + stack.isEmpty());
+
+        stack.push(10);
+        stack.push(20);
+
+        System.out.println("Is Stack Empty? " + stack.isEmpty());
+    }
+}
