@@ -53,3 +53,34 @@ public class Main {
         System.out.println("Is Stack Empty? " + stack.isEmpty());
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        // Peek
+        System.out.println("Top: " + stack.peek());
+
+        // Pop
+        System.out.println("Removed: " + stack.pop());
+
+        // Peek again
+        System.out.println("Top: " + stack.peek());
+
+        // Pop again
+        System.out.println("Removed: " + stack.pop());
+
+        // Final Stack
+        System.out.println("Stack: " + stack);
+    }
+}
