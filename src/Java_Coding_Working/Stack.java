@@ -127,3 +127,28 @@ public class Main {
         }
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        System.out.println("Popping elements:");
+
+        while (!stack.isEmpty()) {
+
+            System.out.println(stack.pop());
+        }
+
+        System.out.println("Stack is empty: " + stack.isEmpty());
+    }
+}
