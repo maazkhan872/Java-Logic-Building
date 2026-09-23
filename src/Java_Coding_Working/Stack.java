@@ -176,3 +176,28 @@ public class Main {
         }
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack1 = new Stack<>();
+
+        stack1.push(10);
+        stack1.push(20);
+        stack1.push(30);
+        stack1.push(40);
+
+        Stack<Integer> stack2 = new Stack<>();
+
+        // Copy elements
+        for (int i = 0; i < stack1.size(); i++) {
+            stack2.push(stack1.get(i));
+        }
+
+        System.out.println("Original Stack: " + stack1);
+        System.out.println("Copied Stack: " + stack2);
+    }
+}
