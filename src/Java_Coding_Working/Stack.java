@@ -201,3 +201,37 @@ public class Main {
         System.out.println("Copied Stack: " + stack2);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(15);
+        stack.push(20);
+        stack.push(25);
+        stack.push(30);
+
+        int evenCount = 0;
+        int oddCount = 0;
+
+        for (int i = 0; i < stack.size(); i++) {
+
+            int value = stack.get(i);
+
+            if (value % 2 == 0) {
+                evenCount++;
+            } else {
+                oddCount++;
+            }
+        }
+
+        System.out.println("Stack: " + stack);
+        System.out.println("Even numbers: " + evenCount);
+        System.out.println("Odd numbers: " + oddCount);
+    }
+}
