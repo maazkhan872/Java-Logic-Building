@@ -273,3 +273,34 @@ public class Main {
         System.out.println("Minimum: " + min);
     }
 }
+
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack1 = new Stack<>();
+
+        // Add elements
+        stack1.push(10);
+        stack1.push(20);
+        stack1.push(30);
+        stack1.push(40);
+        stack1.push(50);
+
+        Stack<Integer> stack2 = new Stack<>();
+
+        // Reverse using pop and push
+        while (!stack1.isEmpty()) {
+
+            int value = stack1.pop();
+
+            stack2.push(value);
+        }
+
+        System.out.println("Original Stack: " + stack1);
+        System.out.println("Reversed Stack: " + stack2);
+    }
+}
