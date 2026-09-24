@@ -235,3 +235,41 @@ public class Main {
         System.out.println("Odd numbers: " + oddCount);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(15);
+        stack.push(40);
+        stack.push(10);
+        stack.push(50);
+        stack.push(20);
+
+        int max = stack.get(0);
+        int min = stack.get(0);
+
+        // Find maximum and minimum
+        for (int i = 1; i < stack.size(); i++) {
+
+            int value = stack.get(i);
+
+            if (value > max) {
+                max = value;
+            }
+
+            if (value < min) {
+                min = value;
+            }
+        }
+
+        System.out.println("Stack: " + stack);
+        System.out.println("Maximum: " + max);
+        System.out.println("Minimum: " + min);
+    }
+}
