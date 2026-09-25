@@ -305,3 +305,46 @@ public class Main {
         System.out.println("Reversed Stack: " + stack2);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(10);
+        stack.push(-5);
+        stack.push(20);
+        stack.push(-15);
+        stack.push(0);
+        stack.push(30);
+
+        int positive = 0;
+        int negative = 0;
+        int zero = 0;
+
+        // Count numbers
+        for (int i = 0; i < stack.size(); i++) {
+
+            int value = stack.get(i);
+
+            if (value > 0) {
+                positive++;
+            } 
+            else if (value < 0) {
+                negative++;
+            } 
+            else {
+                zero++;
+            }
+        }
+
+        System.out.println("Stack: " + stack);
+        System.out.println("Positive Numbers: " + positive);
+        System.out.println("Negative Numbers: " + negative);
+        System.out.println("Zeros: " + zero);
+    }
+}
