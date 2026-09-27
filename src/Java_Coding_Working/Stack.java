@@ -423,3 +423,41 @@ public class Main {
         System.out.println("Second Largest: " + secondLargest);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(10);
+        stack.push(15);
+        stack.push(20);
+        stack.push(25);
+        stack.push(30);
+        stack.push(35);
+
+        System.out.println("Original Stack: " + stack);
+
+        Stack<Integer> temp = new Stack<>();
+
+        // Remove even numbers
+        while (!stack.isEmpty()) {
+
+            int value = stack.pop();
+
+            if (value % 2 != 0) {
+                temp.push(value);
+            }
+        }
+
+        while (!temp.isEmpty()) {
+            stack.push(temp.pop());
+        }
+
+        System.out.println("Updated Stack: " + stack);
+    }
+}
