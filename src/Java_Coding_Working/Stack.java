@@ -383,3 +383,43 @@ public class Main {
         System.out.println("Average: " + average);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(10);
+        stack.push(50);
+        stack.push(30);
+        stack.push(20);
+        stack.push(40);
+
+        int largest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        // Find largest and second largest
+        for (int i = 0; i < stack.size(); i++) {
+
+            int value = stack.get(i);
+
+            if (value > largest) {
+
+                secondLargest = largest;
+                largest = value;
+
+            } else if (value > secondLargest && value < largest) {
+
+                secondLargest = value;
+            }
+        }
+
+        System.out.println("Stack: " + stack);
+        System.out.println("Largest: " + largest);
+        System.out.println("Second Largest: " + secondLargest);
+    }
+}
