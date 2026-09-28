@@ -486,3 +486,31 @@ public class Main {
         System.out.println("Top Element: " + top);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack1 = new Stack<>();
+        Stack<Integer> stack2 = new Stack<>();
+
+        // First Stack
+        stack1.push(10);
+        stack1.push(20);
+        stack1.push(30);
+
+        // Second Stack
+        stack2.push(10);
+        stack2.push(20);
+        stack2.push(30);
+
+        // Compare Stacks
+        if (stack1.equals(stack2)) {
+            System.out.println("Both Stacks are Equal");
+        } else {
+            System.out.println("Stacks are Not Equal");
+        }
+    }
+}
