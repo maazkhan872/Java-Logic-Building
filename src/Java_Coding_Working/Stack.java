@@ -461,3 +461,28 @@ public class Main {
         System.out.println("Updated Stack: " + stack);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        // Add elements
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        // Find bottom and top elements
+        int bottom = stack.firstElement();
+        int top = stack.peek();
+
+        System.out.println("Stack: " + stack);
+        System.out.println("Bottom Element: " + bottom);
+        System.out.println("Top Element: " + top);
+    }
+}
