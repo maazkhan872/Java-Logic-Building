@@ -514,3 +514,35 @@ public class Main {
         }
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        int search = 30;
+
+        int positionBottom = stack.indexOf(search) + 1;
+
+        if (positionBottom > 0) {
+
+            int positionTop = stack.size() - positionBottom + 1;
+
+            System.out.println("Element: " + search);
+            System.out.println("Position from Bottom: " + positionBottom);
+            System.out.println("Position from Top: " + positionTop);
+
+        } else {
+            System.out.println("Element not found");
+        }
+    }
+}
