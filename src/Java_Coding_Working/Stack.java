@@ -546,3 +546,30 @@ public class Main {
         }
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        int remove = 30;
+
+        System.out.println("Original Stack: " + stack);
+
+        if (stack.contains(remove)) {
+            stack.remove(Integer.valueOf(remove));
+            System.out.println("Updated Stack: " + stack);
+        } else {
+            System.out.println("Element not found");
+        }
+    }
+}
