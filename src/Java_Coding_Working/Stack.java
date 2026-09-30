@@ -573,3 +573,33 @@ public class Main {
         }
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(10);
+        stack.push(30);
+        stack.push(10);
+        stack.push(40);
+
+        int search = 10;
+        int count = 0;
+
+        for (int i = 0; i < stack.size(); i++) {
+
+            if (stack.get(i) == search) {
+                count++;
+            }
+        }
+
+        System.out.println("Stack: " + stack);
+        System.out.println(search + " occurs " + count + " times");
+    }
+}
