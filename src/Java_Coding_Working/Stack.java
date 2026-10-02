@@ -659,3 +659,36 @@ public class Main {
         System.out.println("Stack 2 After: " + stack2);
     }
 }
+
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(35);
+        stack.push(20);
+        stack.push(40);
+        stack.push(15);
+        stack.push(50);
+
+        int number = 25;
+
+        System.out.println("Elements greater than " + number + ":");
+
+        for (int i = 0; i < stack.size(); i++) {
+
+            int value = stack.get(i);
+
+            if (value > number) {
+                System.out.println(value);
+            }
+        }
+
+        System.out.println("Original Stack: " + stack);
+    }
+}
