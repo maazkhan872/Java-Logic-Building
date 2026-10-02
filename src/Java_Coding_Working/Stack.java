@@ -12,6 +12,7 @@ public class Main {
         stack.push(30);
         stack.push(40);
         stack.push(50);
+         stack.push(60);
 
         // Print top element
         System.out.println(stack.peek());
