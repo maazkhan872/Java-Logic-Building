@@ -692,3 +692,36 @@ public class Main {
         System.out.println("Original Stack: " + stack);
     }
 }
+
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(30);
+        stack.push(20);
+        stack.push(40);
+        stack.push(50);
+
+        boolean ascending = true;
+
+        for (int i = 0; i < stack.size() - 1; i++) {
+
+            if (stack.get(i) > stack.get(i + 1)) {
+                ascending = false;
+                break;
+            }
+        }
+
+        if (ascending) {
+            System.out.println("Stack is in Ascending Order");
+        } else {
+            System.out.println("Stack is NOT in Ascending Order");
+        }
+    }
+}
