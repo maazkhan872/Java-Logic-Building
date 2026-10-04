@@ -744,7 +744,6 @@ public class Main {
         int value = 5;
         Stack<Integer> temp = new Stack<>();
 
-        // Step 1: Original stack empty karo
         while (!stack.isEmpty()) {
             temp.push(stack.pop());
         }
