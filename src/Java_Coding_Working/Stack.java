@@ -725,3 +725,36 @@ public class Main {
         }
     }
 }
+
+
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        System.out.println("Original Stack: " + stack);
+
+        int value = 5;
+        Stack<Integer> temp = new Stack<>();
+
+        // Step 1: Original stack empty karo
+        while (!stack.isEmpty()) {
+            temp.push(stack.pop());
+        }
+
+        stack.push(value);
+
+        while (!temp.isEmpty()) {
+            stack.push(temp.pop());
+        }
+
+        System.out.println("Updated Stack: " + stack);
+    }
+}
