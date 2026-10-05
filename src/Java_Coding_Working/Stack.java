@@ -790,3 +790,38 @@ public class Main {
         System.out.println("Updated Stack: " + stack);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        int position = 3;
+
+        System.out.println("Original Stack: " + stack);
+
+        Stack<Integer> temp = new Stack<>();
+
+        while (stack.size() >= position) {
+            temp.push(stack.pop());
+        }
+
+        int removed = stack.pop();
+
+        System.out.println("Removed Element: " + removed);
+
+        while (!temp.isEmpty()) {
+            stack.push(temp.pop());
+        }
+
+        System.out.println("Updated Stack: " + stack);
+    }
+}
