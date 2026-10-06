@@ -825,3 +825,30 @@ public class Main {
         System.out.println("Updated Stack: " + stack);
     }
 }
+
+import java.util.Stack;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String text = "HELLO";
+
+        Stack<Character> stack = new Stack<>();
+        
+        for (int i = 0; i < text.length(); i++) {
+
+            stack.push(text.charAt(i));
+        }
+
+        String reversed = "";
+
+        while (!stack.isEmpty()) {
+
+            reversed = reversed + stack.pop();
+        }
+
+        System.out.println("Original String: " + text);
+        System.out.println("Reversed String: " + reversed);
+    }
+}
